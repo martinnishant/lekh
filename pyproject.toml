@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "lekh"
+version = "0.1.0"
+description = "A document-evidence review kernel: cited findings, a deviation gate, measured abstentions, a hash-chained approval ledger."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+# the tests import `lekh` from the repo root; this keeps them working no matter
+# how pytest is invoked (`pytest`, `python -m pytest`, from a subdirectory, in CI)
+pythonpath = ["."]

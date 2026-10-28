@@ -22,7 +22,7 @@ jobs:
         run: python -m lekh.cli check
 
       - name: Test suite
-        run: pytest -q
+        run: python -m pytest -q
 
       # the benchmark is the regression gate: recall, false positives, citations,
       # abstentions and determinism are all asserted in tests/test_lekh.py
