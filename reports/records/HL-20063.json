@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20063",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:29+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Aditya K Kulkarni",
+    "branch": "Nagpur",
+    "sanction_date": "2026-06-05",
+    "sanction_amount": 7200000.0,
+    "appraisal_value": 10213000.0,
+    "memo_valuation": 10213000.0,
+    "income_stated": 134000.0,
+    "income_verified": 135050.0,
+    "obligations_verified": 10500.0,
+    "bureau_score": 742,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.516,
+    "ltv_stated": 0.705,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "1051cf41ca7577c1",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "0bff8cab03c9a2be",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "1a7c20c5249b0a27",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "4ee4adbaff37bd03",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "b7c9006ddef1a57b",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "13d8cd01c90a4add",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

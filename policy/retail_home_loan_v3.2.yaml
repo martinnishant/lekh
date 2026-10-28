@@ -1,0 +1,150 @@
+name: Retail Home Loan Credit Policy
+version: "3.2"
+source_document: policy/retail_home_loan_v3.2.pdf
+rules:
+  - id: R-01
+    title: File completeness
+    clause: "3.1"
+    page: 1
+    severity: high
+    check: presence
+    quote: "must contain the sanction memorandum, the technical valuation report, the bureau report, the deviation register and the KYC annexure"
+    params: {}
+
+  - id: R-02
+    title: Bureau score floor
+    clause: "4.1"
+    page: 2
+    severity: high
+    check: bureau
+    quote: "A bureau score below 700 at the date of sanction requires the file to be declined"
+    params:
+      floor: 700
+
+  - id: R-03
+    title: Delinquency bar
+    clause: "4.2"
+    page: 2
+    severity: high
+    check: dpd
+    quote: "30 or more days past due in the trailing twelve months is not eligible"
+    params:
+      max_dpd: 30
+
+  - id: R-04
+    title: Bureau report recency
+    clause: "4.3"
+    page: 2
+    severity: medium
+    check: bureau_age
+    quote: "must be no older than 30 days at the date of sanction"
+    params:
+      max_age_days: 30
+
+  - id: R-05
+    title: FOIR cap
+    clause: "5.2"
+    page: 3
+    severity: high
+    check: foir
+    quote: "FOIR shall not exceed 55% of verified net monthly income"
+    params:
+      cap: 0.55
+      income_tolerance: 0.10
+
+  - id: R-06
+    title: LTV cap by ticket size
+    clause: "6.2"
+    page: 4
+    severity: high
+    check: ltv
+    quote: "LTV shall not exceed 90% where the loan is up to Rs. 30 lakh, 80% where the loan is above Rs. 30 lakh and up to Rs. 75 lakh, and 75% where the loan is above Rs. 75 lakh"
+    params:
+      value_basis: technical_valuation_report
+      slabs:
+        - {up_to: 3000000, cap: 0.90}
+        - {up_to: 7500000, cap: 0.80}
+        - {up_to: 999999999999, cap: 0.75}
+
+  - id: R-07
+    title: Stated income reconciles to statement
+    clause: "5.4"
+    page: 3
+    severity: high
+    check: income
+    quote: "must reconcile to the verified figure within 10%"
+    params:
+      tolerance: 0.10
+
+  - id: R-08
+    title: Value in memo agrees with valuation report
+    clause: "6.3"
+    page: 4
+    severity: medium
+    check: valuation
+    quote: "must agree with the technical valuation report within 2%"
+    params:
+      tolerance: 0.02
+
+  - id: R-09
+    title: Memo arithmetic reproduces
+    clause: "7.1"
+    page: 5
+    severity: medium
+    check: arithmetic
+    quote: "Every ratio stated in the sanction memorandum must reproduce from the inputs stated in the same memorandum"
+    params: {}
+
+  - id: R-10
+    title: Identity documents agree
+    clause: "7.2"
+    page: 5
+    severity: high
+    check: kyc
+    quote: "The name on the PAN must match the name on the Aadhaar"
+    params: {}
+
+  - id: R-11
+    title: Documents unaltered since intake
+    clause: "3.3"
+    page: 1
+    severity: high
+    check: tamper
+    quote: "A document whose hash no longer agrees with the intake record is treated as unreliable"
+    params: {}
+
+  - id: R-12
+    title: Post-disbursement documents complete
+    clause: "7.3"
+    page: 5
+    severity: medium
+    check: pdd
+    quote: "Post-disbursement documents listed in the annexure must be received within 90 days of disbursement"
+    params: {}
+
+  - id: R-13
+    title: Extraction must not drop rows
+    clause: "3.4"
+    page: 1
+    severity: high
+    check: extraction_integrity
+    quote: "The bank statement is a record, not a claim"
+    params: {}
+
+  - id: R-14
+    title: One governing valuation
+    clause: "6.4"
+    page: 4
+    severity: high
+    check: valuation_conflict
+    quote: "A valuation relied upon for LTV purposes must be dated within 90 days of the sanction date"
+    params: {}
+
+  - id: R-15
+    title: A document must be read to be reviewed
+    clause: "3.2"
+    page: 1
+    severity: high
+    check: document_text
+    quote: "A file missing any document listed in 3.1 is returned to the branch"
+    params: {}

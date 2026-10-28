@@ -1,0 +1,12 @@
+{
+  "loan_id": "HL-20119",
+  "documents": {
+    "sanction_memo.pdf": "b8afcbc5da446f940cd09a2f1f40078aeeae95d267ecac7c609ef51b2428460e",
+    "bank_statement.pdf": "9c5f6d6e2219c03b2eb07f7a684008b66c2045d53141ae71f4f59e2f8e824813",
+    "appraisal_report.pdf": "555567899caf60eae90f11abf96105d005c0a271b5f94bd098ec657be1b2de36",
+    "bureau_report.pdf": "805d9c383cc9f0313605f366c910fddd8da2168a5059c54bed4c6ca0be066a6a",
+    "deviation_register.pdf": "f352bac30cb4e438a352ae9975d7d7af612a7561580f0652030eb9fab8d06977",
+    "kyc_annexure.pdf": "8c4d9d94bbbda2acb6a8e0404e72a1f009940e62cc46b5a295918c93ee7de253"
+  },
+  "captured_at": "2026-06-01T09:00:00+05:30"
+}

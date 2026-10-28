@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20301",
+  "branch": "Pune",
+  "sanction_amount": 4800000,
+  "purchase_price": 5802000.0,
+  "appraised_value": 6726000.0,
+  "memo_valuation": 6726000.0,
+  "income_memo": 130000.0,
+  "income_statement": 109433.33,
+  "obligations_memo": 9000,
+  "obligations_statement": 9000,
+  "bureau_score": 740,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 9,
+  "rate": 8.65,
+  "tenure_months": 240,
+  "emi_true": 42112.33,
+  "foir_true": 0.4647,
+  "ltv_true": 0.7136,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "income_mismatch"
+  ],
+  "applicant": "Pooja I Gupta",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "income_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

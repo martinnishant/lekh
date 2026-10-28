@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20476",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:36+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Anjali H Shetty",
+    "branch": "Nagpur",
+    "sanction_date": "2026-11-29",
+    "sanction_amount": 6200000.0,
+    "appraisal_value": 10448000.0,
+    "memo_valuation": 10448000.0,
+    "income_stated": 119100.0,
+    "income_verified": 120000.0,
+    "obligations_verified": 0.0,
+    "bureau_score": 788,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.513,
+    "ltv_stated": 0.593,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "a4eee5fa5d4abdd2",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "b9a2b792cd57a38b",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "25a283e752b728ee",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "0a5f8062133f4ed8",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "7631bdacb2245625",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "95b2057323d4a1da",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

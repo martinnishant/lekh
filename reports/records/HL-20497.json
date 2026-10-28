@@ -1,0 +1,97 @@
+{
+  "loan_id": "HL-20497",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:37+00:00",
+  "digest": "0a76a374cc1ce0e7",
+  "findings": [
+    {
+      "id": "4ed9ac5b94e5",
+      "case_id": "HL-20497",
+      "rule_id": "R-03",
+      "clause": "4.2",
+      "clause_page": 2,
+      "family": "dpd_delinquency",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Delinquency on file: 60 days past due in the last 12 months",
+      "detail": "Policy permits no account with 30+ DPD in the trailing twelve months.",
+      "derivation": {
+        "dpd": 60,
+        "limit": 30
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "DPD (max, last 12 months) : 60"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Priya X Shetty",
+    "branch": "Surat",
+    "sanction_date": "2026-12-08",
+    "sanction_amount": 8100000.0,
+    "appraisal_value": 13106000.0,
+    "memo_valuation": 13106000.0,
+    "income_stated": 146700.0,
+    "income_verified": 146900.0,
+    "obligations_verified": 500.0,
+    "bureau_score": 757,
+    "dpd_max_12m": 60,
+    "foir_stated": 0.5,
+    "ltv_stated": 0.618,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "1266ae6091b8e87d",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "f30dcdabc15ea0e1",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "5abb12a9ae9342c5",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "5b886fd9f28a53c3",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "08b365cffd6dbab0",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "81d19e6ff31451aa",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      # the policy must still say what the rules claim it says
+      - name: Policy citations resolve
+        run: python -m lekh.cli check
+
+      - name: Test suite
+        run: pytest -q
+
+      # the benchmark is the regression gate: recall, false positives, citations,
+      # abstentions and determinism are all asserted in tests/test_lekh.py
+      - name: Review the corpus and score it
+        run: |
+          python -m lekh.cli run
+          python -m lekh.cli eval
+
+      - name: Publish the evaluation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: |
+            reports/eval-report.md
+            reports/eval-report.json
+            reports/console.html

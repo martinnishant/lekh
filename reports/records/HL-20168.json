@@ -1,0 +1,83 @@
+{
+  "loan_id": "HL-20168",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Meera X Iyer",
+    "branch": "Nagpur",
+    "sanction_date": "2026-07-20",
+    "sanction_amount": 6400000.0,
+    "appraisal_value": 9216000.0,
+    "memo_valuation": 9216000.0,
+    "income_stated": 134000.0,
+    "income_verified": 135683.33,
+    "obligations_verified": 4000.0,
+    "bureau_score": 771,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.514,
+    "ltv_stated": 0.6940000000000001,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2623",
+        "loan_id": "HL-20168",
+        "clause": "FOIR cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-07-19",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2623 HL-20168 FOIR cap L2 - Credit Head 19 Jul 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "1070296eee74b6e6",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "749232164a599fed",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "2537f7e9c99777fb",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "2bbf6bacc8b9b941",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "2d632cad6fd12ee7",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "7e2dbf1745360395",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

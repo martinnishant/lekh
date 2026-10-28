@@ -1,0 +1,98 @@
+{
+  "loan_id": "HL-20294",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "f06e25ebc56efe66",
+  "findings": [
+    {
+      "id": "b210f5b68c3e",
+      "case_id": "HL-20294",
+      "rule_id": "R-02",
+      "clause": "4.1",
+      "clause_page": 2,
+      "family": "bureau_low",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Bureau score 630 is below the policy floor of 700",
+      "detail": "The report on file scores 630. Policy requires 700 or better at sanction.",
+      "derivation": {
+        "score": 630,
+        "floor": 700,
+        "shortfall": 70
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "Commercial bureau score : 630"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Vikram Y Nair",
+    "branch": "Kochi",
+    "sanction_date": "2026-09-12",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 3118000.0,
+    "memo_valuation": 3118000.0,
+    "income_stated": 92400.0,
+    "income_verified": 91816.67,
+    "obligations_verified": 0.0,
+    "bureau_score": 630,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.207,
+    "ltv_stated": 0.754,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "d91307fdd8dff94d",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "b2a4e512f1cf38dd",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "c6d93e7a50ef9748",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "cf57500bac246544",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "6e8e797251d7ffdf",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "41c6e72581546f77",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

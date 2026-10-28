@@ -1,0 +1,77 @@
+{
+  "loan_id": "HL-20392",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:35+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Anjali M Mehta",
+    "branch": "Indore",
+    "sanction_date": "2026-10-24",
+    "sanction_amount": 4800000.0,
+    "appraisal_value": 7522000.0,
+    "memo_valuation": 7522000.0,
+    "income_stated": 135600.0,
+    "income_verified": 134716.67,
+    "obligations_verified": 22500.0,
+    "bureau_score": 774,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.518,
+    "ltv_stated": 0.638,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "f96f08f909f11329",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "721ff188c32c017e",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "ad5a02a4fa9874b6",
+      "tampered": false
+    },
+    {
+      "name": "co_applicant_statement.pdf",
+      "pages": 1,
+      "sha256": "34510868fd53dc1c",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "96a7c4549e7cceae",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "120bb2a322c12e46",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "c665a5ec7579ff91",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "loan_id": "HL-20231",
+  "branch": "Nagpur",
+  "sanction_amount": 6400000,
+  "purchase_price": 8803000.0,
+  "appraised_value": 8956000.0,
+  "memo_valuation": 9948000.0,
+  "income_memo": 158700.0,
+  "income_statement": 159500.0,
+  "obligations_memo": 14500,
+  "obligations_statement": 14500,
+  "bureau_score": 738,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 13,
+  "rate": 9.0,
+  "tenure_months": 180,
+  "emi_true": 64913.06,
+  "foir_true": 0.5026,
+  "ltv_true": 0.7146,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "valuation_mismatch"
+  ],
+  "applicant": "Imran G Menon",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "valuation_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": [
+    "memo valuation pushed the LTV under the cap on paper only"
+  ]
+}

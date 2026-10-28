@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20266",
+  "branch": "Pune",
+  "sanction_amount": 6400000,
+  "purchase_price": 9314000.0,
+  "appraised_value": 10044000.0,
+  "memo_valuation": 10044000.0,
+  "income_memo": 110900.0,
+  "income_statement": 109266.67,
+  "obligations_memo": 0,
+  "obligations_statement": 0,
+  "bureau_score": 782,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 18,
+  "rate": 8.65,
+  "tenure_months": 300,
+  "emi_true": 52183.07,
+  "foir_true": 0.4744,
+  "ltv_true": 0.6372,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "conflicting_valuation"
+  ],
+  "applicant": "Sneha V Menon",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "conflicting_valuation",
+      "status": "needs_human"
+    }
+  ],
+  "notes": []
+}

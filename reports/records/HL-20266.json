@@ -1,0 +1,105 @@
+{
+  "loan_id": "HL-20266",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:32+00:00",
+  "digest": "5a17b4106f14bb71",
+  "findings": [
+    {
+      "id": "8916587a2248",
+      "case_id": "HL-20266",
+      "rule_id": "R-14",
+      "clause": "6.4",
+      "clause_page": 4,
+      "family": "valuation_conflict",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "File carries two valuations: report Rs. 10,044,000 and valuation_revised.pdf Rs. 10,948,000",
+      "detail": "LTV depends on which valuation is adopted. The system does not choose; a named person decides which valuation governs, and the choice is logged.",
+      "derivation": {
+        "report_value": 10044000.0,
+        "other_values": {
+          "valuation_revised.pdf": 10948000.0
+        }
+      },
+      "evidence": [
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Appraised value (technical) : Rs. 1,00,44,000/-"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Sneha V Menon",
+    "branch": "Pune",
+    "sanction_date": "2026-08-31",
+    "sanction_amount": 6400000.0,
+    "appraisal_value": 10044000.0,
+    "memo_valuation": 10044000.0,
+    "income_stated": 110900.0,
+    "income_verified": 109266.67,
+    "obligations_verified": 0.0,
+    "bureau_score": 782,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.47100000000000003,
+    "ltv_stated": 0.637,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "3754e69ff7d158f0",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "b28255252c273b75",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "acd19990cd2c53a1",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "1b147b5cbedf73a7",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "d2142fa556c52c35",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "ec4507d5b0f9f0a6",
+      "tampered": false
+    },
+    {
+      "name": "valuation_revised.pdf",
+      "pages": 1,
+      "sha256": "159601ee3b17ef0d",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "loan_id": "HL-20014",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:28+00:00",
+  "digest": "9a2383daed900fb1",
+  "findings": [
+    {
+      "id": "fcd1e675e167",
+      "case_id": "HL-20014",
+      "rule_id": "R-01",
+      "clause": "3.1",
+      "clause_page": 1,
+      "family": "missing_document",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "File incomplete: bank_statement.pdf not present in the credit file",
+      "detail": "Every check that depends on a missing document is withheld rather than passed. The file needs the document before it can be reviewed.",
+      "derivation": {
+        "missing": [
+          "bank_statement.pdf"
+        ],
+        "size": 1
+      },
+      "evidence": [],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Pooja H Joshi",
+    "branch": "Thane",
+    "sanction_date": "2026-05-15",
+    "sanction_amount": 7200000.0,
+    "appraisal_value": 10263000.0,
+    "memo_valuation": 10263000.0,
+    "income_stated": 147200.0,
+    "income_verified": null,
+    "obligations_verified": 0.0,
+    "bureau_score": 767,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.49200000000000005,
+    "ltv_stated": 0.7020000000000001,
+    "absent_fields": [],
+    "missing_docs": [
+      "bank_statement.pdf"
+    ],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "260d92d3cf4b1330",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "7efaacfaca1ac04a",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "9944094e29bd61a5",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "3d17cb87d2c6b365",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "503d79d97dc0c719",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

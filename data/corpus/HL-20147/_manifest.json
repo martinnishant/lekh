@@ -1,0 +1,12 @@
+{
+  "loan_id": "HL-20147",
+  "documents": {
+    "sanction_memo.pdf": "4f40856e8fa4d1a5e04dd39c9403eed74d253408ce1c9807bf4f4aad270ef347",
+    "bank_statement.pdf": "bbd1b42daaaae639cfd9885353712eb0f0ca36289da2a03e7b0a6797e6f5b933",
+    "appraisal_report.pdf": "943a8985c23f2999b262021c136bf371c5bbeb5814d29e595b08816300f508ee",
+    "bureau_report.pdf": "f7d9d80f0e5a5d4b82ad63e1997ba2a2a34a9973184e62ca3a8926a584ba1352",
+    "deviation_register.pdf": "5d65d9e42047eb2a5ce4daa72298bdffc9dbb5626a0b6e08899f779d8677f3ec",
+    "kyc_annexure.pdf": "f34c00c7e708bde55870aca7d623fc4faaf5190a43b655e5893fcdef5a4780ee"
+  },
+  "captured_at": "2026-06-01T09:00:00+05:30"
+}

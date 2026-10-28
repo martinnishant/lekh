@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20462",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:36+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Aditya V Patel",
+    "branch": "Surat",
+    "sanction_date": "2026-11-23",
+    "sanction_amount": 6200000.0,
+    "appraisal_value": 9717000.0,
+    "memo_valuation": 9717000.0,
+    "income_stated": 165000.0,
+    "income_verified": 164233.33,
+    "obligations_verified": 11000.0,
+    "bureau_score": 754,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.38799999999999996,
+    "ltv_stated": 0.638,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "99d4b17460ae81b1",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "2c0a5c21592d3ab7",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "f9fc0b84912f5821",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "8e4d4a73b5262316",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "26d5666931272f2a",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "2e6f0f0e6d8c94da",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

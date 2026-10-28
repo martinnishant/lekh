@@ -1,0 +1,97 @@
+{
+  "loan_id": "HL-20273",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:32+00:00",
+  "digest": "eb57f5c7871f194c",
+  "findings": [
+    {
+      "id": "c28112f95f8f",
+      "case_id": "HL-20273",
+      "rule_id": "R-13",
+      "clause": "3.4",
+      "clause_page": 1,
+      "family": "extraction_gap",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "1 transaction row(s) could not be parsed with confidence",
+      "detail": "The statement contains rows that look like credits but did not parse. Income and every ratio built on it are withheld until a person reads the statement, because dropping the row would change the answer.",
+      "derivation": {
+        "rows": 1,
+        "sample": "07/03/2026 SALARY CREDIT - NEFT O,59,100 3,04,100"
+      },
+      "evidence": [
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "07/03/2026 SALARY CREDIT - NEFT O,59,100 3,04,100"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Rahul Q Reddy",
+    "branch": "Nagpur",
+    "sanction_date": "2026-09-03",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2944000.0,
+    "memo_valuation": 2944000.0,
+    "income_stated": 157700.0,
+    "income_verified": 157920.0,
+    "obligations_verified": 4500.0,
+    "bureau_score": 780,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.149,
+    "ltv_stated": 0.7979999999999999,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "fafa86e764f1ce5a",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "6f871f8ce46f661d",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "7a64b0ef804d34c3",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "13af7f08d2b91b91",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "32f95b04117323c2",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "d0d72dcb32143786",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

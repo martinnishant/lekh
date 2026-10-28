@@ -1,0 +1,104 @@
+{
+  "loan_id": "HL-20049",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:28+00:00",
+  "digest": "ee117563cd8ff50f",
+  "findings": [
+    {
+      "id": "fca32cc9f08d",
+      "case_id": "HL-20049",
+      "rule_id": "R-12",
+      "clause": "7.3",
+      "clause_page": 5,
+      "family": "pdd_missing",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "2 post-disbursement document(s) not on file: Occupancy certificate, Tax receipt - current year",
+      "detail": "Disbursement condition not satisfied by the documents in the credit file.",
+      "derivation": {
+        "missing": [
+          "Occupancy certificate",
+          "Tax receipt - current year"
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Occupancy certificate : MISSING"
+        },
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Tax receipt - current year : MISSING"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Farhan G Gupta",
+    "branch": "Surat",
+    "sanction_date": "2026-05-30",
+    "sanction_amount": 8100000.0,
+    "appraisal_value": 11793000.0,
+    "memo_valuation": 11793000.0,
+    "income_stated": 158000.0,
+    "income_verified": 158683.33,
+    "obligations_verified": 10500.0,
+    "bureau_score": 749,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.519,
+    "ltv_stated": 0.687,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "5cee46d3db379817",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "f7693b9e6102280e",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "231ef5395ef69fa4",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "5dc4d174cb7ffe59",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "ae5f17edc0356950",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "76b283bc499f1dbe",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

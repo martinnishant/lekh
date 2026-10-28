@@ -1,0 +1,104 @@
+{
+  "loan_id": "HL-20189",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "9de316738af5fe10",
+  "findings": [
+    {
+      "id": "0f3940867142",
+      "case_id": "HL-20189",
+      "rule_id": "R-04",
+      "clause": "4.3",
+      "clause_page": 2,
+      "family": "stale_bureau",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "Bureau report was 80 days old at sanction (report 10 May 2026, sanctioned 29 Jul 2026)",
+      "detail": "Policy requires a report no older than 30 days at sanction.",
+      "derivation": {
+        "report_date": "2026-05-10",
+        "sanction_date": "2026-07-29",
+        "age_days": 80,
+        "limit_days": 30
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "Report date : 10 May 2026"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Sanction date : 29 Jul 2026"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Imran P Gupta",
+    "branch": "Surat",
+    "sanction_date": "2026-07-29",
+    "sanction_amount": 8100000.0,
+    "appraisal_value": 12474000.0,
+    "memo_valuation": 12474000.0,
+    "income_stated": 138900.0,
+    "income_verified": 138200.0,
+    "obligations_verified": 0.0,
+    "bureau_score": 767,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.499,
+    "ltv_stated": 0.649,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "c260129bbc3e8366",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "1eca7e1e14912a28",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "58b014a2b2a8bf0f",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "f1fa43a1df0a543c",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "01935b1819dd7cd8",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "65369bb80a3758a6",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

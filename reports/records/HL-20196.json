@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20196",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Imran D Sharma",
+    "branch": "Jaipur",
+    "sanction_date": "2026-08-01",
+    "sanction_amount": 6200000.0,
+    "appraisal_value": 9862000.0,
+    "memo_valuation": 9862000.0,
+    "income_stated": 117900.0,
+    "income_verified": 116633.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 759,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.518,
+    "ltv_stated": 0.629,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "259fcc8ec2376c29",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "95e0f079dd3f9b9a",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "0c48aab75f00b1c8",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "76b008da15bf0203",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "9fc2e51016edb939",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "663d09835d2d234b",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

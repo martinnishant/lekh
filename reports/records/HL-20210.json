@@ -1,0 +1,132 @@
+{
+  "loan_id": "HL-20210",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "656a0a847a5e3a4a",
+  "findings": [
+    {
+      "id": "e79230ac3dbe",
+      "case_id": "HL-20210",
+      "rule_id": "R-06",
+      "clause": "6.2",
+      "clause_page": 4,
+      "family": "ltv_breach",
+      "status": "explained",
+      "severity": "high",
+      "claim": "LTV 86.3% exceeds the 80% slab cap, covered by D-2429",
+      "detail": "Loan Rs. 5,200,000 on a report value of Rs. 6,025,000. Deviation D-2429 approved by L2 - Credit Head is valid to 05 Nov 2026.",
+      "derivation": {
+        "ltv": 0.8631,
+        "cap": 0.8,
+        "loan": 5200000.0,
+        "value": 6025000.0,
+        "deviation": {
+          "deviation_id": "D-2429",
+          "loan_id": "HL-20210",
+          "clause": "LTV cap",
+          "approved_by": "L2 - Credit Head",
+          "valid_till": "2026-11-05",
+          "status": "Approved",
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2429 HL-20210 LTV cap L2 - Credit Head 05 Nov 2026 Approved"
+        }
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Loan amount sanctioned : Rs. 52,00,000/-"
+        },
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Value as per valuation report : Rs. 60,25,000/-"
+        },
+        {
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2429 HL-20210 LTV cap L2 - Credit Head 05 Nov 2026 Approved"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Neha L Verma",
+    "branch": "Nagpur",
+    "sanction_date": "2026-08-07",
+    "sanction_amount": 5200000.0,
+    "appraisal_value": 6025000.0,
+    "memo_valuation": 6025000.0,
+    "income_stated": 158700.0,
+    "income_verified": 156350.0,
+    "obligations_verified": 4500.0,
+    "bureau_score": 759,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.35600000000000004,
+    "ltv_stated": 0.863,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2429",
+        "loan_id": "HL-20210",
+        "clause": "LTV cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-11-05",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2429 HL-20210 LTV cap L2 - Credit Head 05 Nov 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "5eb44973b5328407",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "0e4122fb4dcdda06",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "e8df41ecf1dfb049",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "abf8734c8ae25316",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "f2ef945fcbf621ba",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "1656125aa8a05add",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 1,
+    "needs_human": 0
+  }
+}

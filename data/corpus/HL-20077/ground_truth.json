@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20077",
+  "branch": "Thane",
+  "sanction_amount": 6400000,
+  "purchase_price": 9227000.0,
+  "appraised_value": 10226000.0,
+  "memo_valuation": 10226000.0,
+  "income_memo": 109100.0,
+  "income_statement": 111450.0,
+  "obligations_memo": 5000,
+  "obligations_statement": 5000,
+  "bureau_score": 734,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 17,
+  "rate": 8.5,
+  "tenure_months": 300,
+  "emi_true": 51534.53,
+  "foir_true": 0.514,
+  "ltv_true": 0.6259,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "arithmetic_mismatch"
+  ],
+  "applicant": "Aditya I Iyer",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "arithmetic_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

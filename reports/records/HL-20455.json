@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20455",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:36+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Priya W Verma",
+    "branch": "Jaipur",
+    "sanction_date": "2026-11-20",
+    "sanction_amount": 2450000.0,
+    "appraisal_value": 3981000.0,
+    "memo_valuation": 3981000.0,
+    "income_stated": 165000.0,
+    "income_verified": 163150.0,
+    "obligations_verified": 11000.0,
+    "bureau_score": 769,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.196,
+    "ltv_stated": 0.615,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "c146617277b913ce",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "a5757ed9f8f7bdb1",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "06d3995101b40249",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "a0844ba065a3594e",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "3c7f4254609c03df",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "18f403a3209e58a5",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

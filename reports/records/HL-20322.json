@@ -1,0 +1,122 @@
+{
+  "loan_id": "HL-20322",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "a3d1f9321ba16109",
+  "findings": [
+    {
+      "id": "0a6c1e6e66d1",
+      "case_id": "HL-20322",
+      "rule_id": "R-11",
+      "clause": "3.3",
+      "clause_page": 1,
+      "family": "tamper",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Document integrity failure: hash does not match the intake manifest for bank_statement.pdf; statement summary says Rs. 171,400, the credits printed on the same statement average Rs. 145,283 (18% apart)",
+      "detail": "The file changed after intake, or the statement does not agree with its own transactions. Review is blocked on this document until the discrepancy is explained by a named person.",
+      "derivation": {
+        "detectors": [
+          "hash",
+          "internal_consistency"
+        ],
+        "documents": [
+          "bank_statement.pdf"
+        ],
+        "stated_summary": 171400.0,
+        "recomputed_from_transactions": 145283.33
+      },
+      "evidence": [
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "kind": "system_record",
+          "quote": "sha256 for bank_statement.pdf differs from _manifest.json"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "28/03/2026 SALARY CREDIT - NEFT 1,47,700 2,92,700"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "27/04/2026 SALARY CREDIT - NEFT 1,46,900 4,39,600"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 3,
+          "quote": "Average monthly salary credit over period : Rs. 1,71,400/-"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Vikram B Chauhan",
+    "branch": "Thane",
+    "sanction_date": "2026-09-24",
+    "sanction_amount": 8100000.0,
+    "appraisal_value": 12870000.0,
+    "memo_valuation": 12870000.0,
+    "income_stated": 146700.0,
+    "income_verified": 145283.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 774,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.49700000000000005,
+    "ltv_stated": 0.629,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [
+      "bank_statement.pdf"
+    ],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "e0ddc5461d7ef3e4",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "5e6b1efb5f27075a",
+      "tampered": true
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "c7f19ec591d464ef",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "185543e32ba35cee",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "45c43fbae38a331e",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "a73a7ed438e28d9e",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

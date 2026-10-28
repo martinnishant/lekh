@@ -1,0 +1,55 @@
+name: live console
+
+# Publishes the review console to GitHub Pages as a single self-contained page.
+# Enable once in the repo: Settings -> Pages -> Build and deployment -> Source: GitHub Actions.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Build the corpus and review it
+        run: |
+          python -m lekh.cli generate
+          python -m lekh.cli check
+          python -m lekh.cli run
+          python -m lekh.cli eval
+          python -m lekh.cli html
+      - name: Assemble the site
+        run: |
+          mkdir -p site
+          cp reports/console.html site/index.html
+          cp reports/eval-report.md site/eval-report.md
+          cp reports/eval-report.json site/eval-report.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

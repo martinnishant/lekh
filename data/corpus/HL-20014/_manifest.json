@@ -1,0 +1,11 @@
+{
+  "loan_id": "HL-20014",
+  "documents": {
+    "sanction_memo.pdf": "503d79d97dc0c719b4729c264a4cc05dac0696321ee008a37360d86c2f8ef8fe",
+    "appraisal_report.pdf": "260d92d3cf4b1330e0a1e6a5a7aef7faa2ce9a90841257b509b8300055c75e58",
+    "bureau_report.pdf": "7efaacfaca1ac04a82dec985b655bc29f8f4e9dba94af5edb384b188b1941988",
+    "deviation_register.pdf": "9944094e29bd61a52561ab1fedd7359ee0b884f6f46ed9dcc6628d0508c5d544",
+    "kyc_annexure.pdf": "3d17cb87d2c6b365392b8858cccd9a701224aa3e506207ed9bb812469d5e4abf"
+  },
+  "captured_at": "2026-06-01T09:00:00+05:30"
+}

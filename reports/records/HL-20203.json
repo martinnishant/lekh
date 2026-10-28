@@ -1,0 +1,104 @@
+{
+  "loan_id": "HL-20203",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "4e7ec5c2b23f390a",
+  "findings": [
+    {
+      "id": "9f4e73aa7428",
+      "case_id": "HL-20203",
+      "rule_id": "R-07",
+      "clause": "5.4",
+      "clause_page": 3,
+      "family": "income_mismatch",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "The memorandum's income line could not be located, so it cannot be reconciled",
+      "detail": "The statement gives a verified income, but the figure the memorandum actually relied on was not found under any label this reviewer reads. Label drift between branches is a real cause and a person should look.",
+      "derivation": {
+        "income_verified": 157283.33,
+        "memo_income": null
+      },
+      "evidence": [
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "05/02/2026 SALARY CREDIT - NEFT 1,51,800 2,96,800"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "07/03/2026 SALARY CREDIT - NEFT 1,57,100 4,53,900"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Pooja V Shetty",
+    "branch": "Jaipur",
+    "sanction_date": "2026-08-04",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4431000.0,
+    "memo_valuation": 4431000.0,
+    "income_stated": null,
+    "income_verified": 157283.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 720,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.19699999999999998,
+    "ltv_stated": 0.7,
+    "absent_fields": [
+      "income_memo"
+    ],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "e39ef475f38ab00a",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "2ea16000815f6280",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "4d7f1b7a3a27a052",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "ecaf37f04fe018b0",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "708dcf449687f0fa",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "a9c9fa91d2562ef0",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

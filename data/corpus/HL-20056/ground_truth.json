@@ -1,0 +1,29 @@
+{
+  "loan_id": "HL-20056",
+  "branch": "Surat",
+  "sanction_amount": 4800000,
+  "purchase_price": 6688000.0,
+  "appraised_value": 7101000.0,
+  "memo_valuation": 7101000.0,
+  "income_memo": 110200.0,
+  "income_statement": 110800.0,
+  "obligations_memo": 15000,
+  "obligations_statement": 15000,
+  "bureau_score": 774,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 20,
+  "rate": 8.65,
+  "tenure_months": 240,
+  "emi_true": 42112.33,
+  "foir_true": 0.5192,
+  "ltv_true": 0.676,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "co_applicant_verified"
+  ],
+  "applicant": "Farhan J Mehta",
+  "pdd_missing": [],
+  "expected": [],
+  "notes": []
+}

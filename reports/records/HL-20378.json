@@ -1,0 +1,89 @@
+{
+  "loan_id": "HL-20378",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:35+00:00",
+  "digest": "24752c034426e106",
+  "findings": [
+    {
+      "id": "3a21e1702e61",
+      "case_id": "HL-20378",
+      "rule_id": "R-01",
+      "clause": "3.1",
+      "clause_page": 1,
+      "family": "missing_document",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "File incomplete: bank_statement.pdf not present in the credit file",
+      "detail": "Every check that depends on a missing document is withheld rather than passed. The file needs the document before it can be reviewed.",
+      "derivation": {
+        "missing": [
+          "bank_statement.pdf"
+        ],
+        "size": 1
+      },
+      "evidence": [],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Imran S Nair",
+    "branch": "Nagpur",
+    "sanction_date": "2026-10-18",
+    "sanction_amount": 6400000.0,
+    "appraisal_value": 9704000.0,
+    "memo_valuation": 9704000.0,
+    "income_stated": 109600.0,
+    "income_verified": null,
+    "obligations_verified": 0.0,
+    "bureau_score": 773,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.507,
+    "ltv_stated": 0.66,
+    "absent_fields": [],
+    "missing_docs": [
+      "bank_statement.pdf"
+    ],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "5a6a6f4b1c14772d",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "d4ce7d2387015613",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "c1c6e703dc96a7a5",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "5537171364966c92",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "bbbfc32dc29335a0",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

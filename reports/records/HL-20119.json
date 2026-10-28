@@ -1,0 +1,109 @@
+{
+  "loan_id": "HL-20119",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:30+00:00",
+  "digest": "149ed087551dc155",
+  "findings": [
+    {
+      "id": "76b49f7a1c57",
+      "case_id": "HL-20119",
+      "rule_id": "R-09",
+      "clause": "7.1",
+      "clause_page": 5,
+      "family": "arithmetic_mismatch",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "The memorandum's own ratios do not reproduce from its own inputs",
+      "detail": "EMI stated Rs. 18,604, amortisation gives Rs. 19,721; FOIR stated 16.5%, memo's own inputs give 25.9%",
+      "derivation": {
+        "emi_stated": 18604.0,
+        "emi_recomputed": 19721.11,
+        "foir_stated": 0.165,
+        "foir_recomputed": 0.2585
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Monthly instalment : Rs. 18,604/-"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "FOIR (stated) : 16.5%"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "LTV (stated) : 82.3% on appraised value"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Kavya Y Iyer",
+    "branch": "Thane",
+    "sanction_date": "2026-06-29",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2854000.0,
+    "memo_valuation": 2854000.0,
+    "income_stated": 111100.0,
+    "income_verified": 109400.0,
+    "obligations_verified": 9000.0,
+    "bureau_score": 721,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.165,
+    "ltv_stated": 0.823,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "555567899caf60ea",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "9c5f6d6e2219c03b",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "805d9c383cc9f031",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "f352bac30cb4e438",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "8c4d9d94bbbda2ac",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "b8afcbc5da446f94",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

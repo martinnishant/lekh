@@ -1,0 +1,12 @@
+{
+  "loan_id": "HL-20070",
+  "documents": {
+    "sanction_memo.pdf": "fcd83b96e61459dfa264ff2373e03ff0a30f7caef3a0d07b5845f063d980f6ff",
+    "bank_statement.pdf": "fda8dfc5a15212a46da9f8d41566b1e105799cf80bbc2caa511589c979b4a4c6",
+    "appraisal_report.pdf": "2f1f386af96365e212e0801cd36e8f483852d3301e7c4f9abd4698a8696e1a54",
+    "bureau_report.pdf": "5e588e54754c84da992ebe53f1ef5e7326455a2d02d4ffd8f8ff8935fb33ae23",
+    "deviation_register.pdf": "b246112e480804c2c98a2205a7c17cda33fe05e38b5dd739f478437ba12c44ea",
+    "kyc_annexure.pdf": "bcb369e05472e00ef531de721df9c1f72c9a5f07c443f57ea8f076eb85d629d0"
+  },
+  "captured_at": "2026-06-01T09:00:00+05:30"
+}

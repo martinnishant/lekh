@@ -1,0 +1,44 @@
+{
+  "loan_id": "HL-20343",
+  "branch": "Jaipur",
+  "sanction_amount": 3100000,
+  "purchase_price": 3632000.0,
+  "appraised_value": 4143000.0,
+  "memo_valuation": 4143000.0,
+  "income_memo": 135000.0,
+  "income_statement": 134833.33,
+  "obligations_memo": 62500,
+  "obligations_statement": 62500,
+  "bureau_score": 756,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 24,
+  "rate": 8.5,
+  "tenure_months": 300,
+  "emi_true": 24962.04,
+  "foir_true": 0.6479,
+  "ltv_true": 0.7483,
+  "ltv_cap": 0.8,
+  "deviations": [
+    {
+      "deviation_id": "D-2548",
+      "loan_id": "HL-20343",
+      "clause": "FOIR cap",
+      "approved_by": "L2 - Credit Head",
+      "valid_till": "13 Sep 2026",
+      "status": "Approved"
+    }
+  ],
+  "seeded": [
+    "deviation_invalid",
+    "foir_breach"
+  ],
+  "applicant": "Arjun O Chauhan",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "foir_breach",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

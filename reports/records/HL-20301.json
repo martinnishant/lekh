@@ -1,0 +1,109 @@
+{
+  "loan_id": "HL-20301",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "a21ebd0826a3ac3e",
+  "findings": [
+    {
+      "id": "fb9eac3dcb4a",
+      "case_id": "HL-20301",
+      "rule_id": "R-07",
+      "clause": "5.4",
+      "clause_page": 3,
+      "family": "income_mismatch",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Stated income Rs. 130,000 against verified Rs. 109,433 (+18.8%)",
+      "detail": "The memorandum's income line does not reconcile to the salary credits on the statement. The verified figure is the one the ratio was tested on.",
+      "derivation": {
+        "income_stated": 130000.0,
+        "income_verified": 109433.33,
+        "gap": 0.1879,
+        "tolerance": 0.1
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "NMI - applicant : Rs. 1,30,000/-"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "19/03/2026 SALARY CREDIT - NEFT 1,12,600 2,57,600"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "18/04/2026 SALARY CREDIT - NEFT 1,08,300 3,65,900"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Pooja I Gupta",
+    "branch": "Pune",
+    "sanction_date": "2026-09-15",
+    "sanction_amount": 4800000.0,
+    "appraisal_value": 6726000.0,
+    "memo_valuation": 6726000.0,
+    "income_stated": 130000.0,
+    "income_verified": 109433.33,
+    "obligations_verified": 9000.0,
+    "bureau_score": 740,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.39299999999999996,
+    "ltv_stated": 0.7140000000000001,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "1c1512bab5f89fe3",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "3ffa0499e1740bae",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "0e00e7da41b43482",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "3153e84f35dbf989",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "e337fa75bdb05d53",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "124a0e9640a5984a",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

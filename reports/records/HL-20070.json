@@ -1,0 +1,109 @@
+{
+  "loan_id": "HL-20070",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:29+00:00",
+  "digest": "8f4921e3a4929eda",
+  "findings": [
+    {
+      "id": "e19f61fa7997",
+      "case_id": "HL-20070",
+      "rule_id": "R-09",
+      "clause": "7.1",
+      "clause_page": 5,
+      "family": "arithmetic_mismatch",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "The memorandum's own ratios do not reproduce from its own inputs",
+      "detail": "EMI stated Rs. 41,165, amortisation gives Rs. 43,638; FOIR stated 26.5%, memo's own inputs give 33.0%",
+      "derivation": {
+        "emi_stated": 41165.0,
+        "emi_recomputed": 43638.21,
+        "foir_stated": 0.265,
+        "foir_recomputed": 0.3304
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "EMI at sanction : Rs. 41,165/-"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "FOIR (stated) : 26.5%"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "LTV (stated) : 63.7% on technical valuation"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Divya K Chauhan",
+    "branch": "Surat",
+    "sanction_date": "2026-06-08",
+    "sanction_amount": 5200000.0,
+    "appraisal_value": 8157000.0,
+    "memo_valuation": 8157000.0,
+    "income_stated": 159300.0,
+    "income_verified": 159433.33,
+    "obligations_verified": 9000.0,
+    "bureau_score": 720,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.265,
+    "ltv_stated": 0.637,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "2f1f386af96365e2",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "fda8dfc5a15212a4",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "5e588e54754c84da",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "b246112e480804c2",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "bcb369e05472e00e",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "fcd83b96e61459df",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "loan_id": "HL-20007",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:28+00:00",
+  "digest": "d676c58ea7e76b66",
+  "findings": [
+    {
+      "id": "0fc93424a703",
+      "case_id": "HL-20007",
+      "rule_id": "R-14",
+      "clause": "6.4",
+      "clause_page": 4,
+      "family": "valuation_conflict",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "File carries two valuations: report Rs. 2,940,000 and valuation_revised.pdf Rs. 3,205,000",
+      "detail": "LTV depends on which valuation is adopted. The system does not choose; a named person decides which valuation governs, and the choice is logged.",
+      "derivation": {
+        "report_value": 2940000.0,
+        "other_values": {
+          "valuation_revised.pdf": 3205000.0
+        }
+      },
+      "evidence": [
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Value as per valuation report : Rs. 29,40,000/-"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Neha C Sharma",
+    "branch": "Surat",
+    "sanction_date": "2026-05-12",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2940000.0,
+    "memo_valuation": 2940000.0,
+    "income_stated": 159200.0,
+    "income_verified": 157733.33,
+    "obligations_verified": 21000.0,
+    "bureau_score": 736,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.262,
+    "ltv_stated": 0.799,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "e32b730dfd22bde8",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "93368c8c2105728a",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "f8b4a11935ec57f1",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "695ac1ee5f5d063b",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "bacb48e037aa746e",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "919ad718c6a8be55",
+      "tampered": false
+    },
+    {
+      "name": "valuation_revised.pdf",
+      "pages": 1,
+      "sha256": "b156784603615819",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

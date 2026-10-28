@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20147",
+  "branch": "Thane",
+  "sanction_amount": 2350000,
+  "purchase_price": 2490000.0,
+  "appraised_value": 2866000.0,
+  "memo_valuation": 2866000.0,
+  "income_memo": 157900.0,
+  "income_statement": 155733.33,
+  "obligations_memo": 21000,
+  "obligations_statement": 21000,
+  "bureau_score": 781,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 6,
+  "rate": 9.0,
+  "tenure_months": 180,
+  "emi_true": 23835.26,
+  "foir_true": 0.2838,
+  "ltv_true": 0.82,
+  "ltv_cap": 0.9,
+  "deviations": [],
+  "seeded": [
+    "kyc_name_mismatch"
+  ],
+  "applicant": "Pooja C Kulkarni",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "kyc_name_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

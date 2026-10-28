@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>lekh · review console</title>
+<style>
+  :root{
+    --ink:#111315; --muted:#6b7280; --line:#e5e7eb; --bg:#fbfbfa; --panel:#ffffff;
+    --accent:#0f6d4f; --accent-soft:#e8f3ee; --warn:#a15c00; --warn-soft:#fdf3e3;
+    --bad:#a4262c; --bad-soft:#fbeaea; --ok:#0f6d4f;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.45}
+  a{color:var(--accent)}
+  .top{display:flex;align-items:center;gap:18px;padding:14px 22px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+  .word{font-family:var(--mono);font-weight:600;letter-spacing:-.5px;font-size:19px}
+  .word span{color:var(--accent)}
+  .sub{color:var(--muted);font-size:12.5px}
+  .top .right{margin-left:auto;display:flex;gap:16px;align-items:center;font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+  .strip{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+  .cell{background:var(--panel);padding:10px 16px}
+  .cell .k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .cell .v{font-family:var(--mono);font-size:16px;margin-top:2px}
+  .cell .v.good{color:var(--accent)}
+  .wrap{display:grid;grid-template-columns:300px 1fr;min-height:calc(100vh - 106px)}
+  .queue{border-right:1px solid var(--line);background:var(--panel);padding:12px 0;max-height:calc(100vh - 106px);overflow:auto}
+  .queue h4{margin:4px 16px 8px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .search{margin:0 12px 8px;width:calc(100% - 24px);padding:7px 9px;border:1px solid var(--line);border-radius:7px;font-family:var(--sans);font-size:12.5px;background:#fff}
+  .chips{display:flex;gap:5px;flex-wrap:wrap;padding:0 12px 10px}
+  .chip{font-size:11px;padding:3px 8px;border:1px solid var(--line);border-radius:99px;cursor:pointer;color:var(--muted);background:#fff}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .item{padding:9px 16px;border-bottom:1px solid #f1f2f3;cursor:pointer;display:flex;gap:8px;align-items:flex-start}
+  .item:hover{background:#f7f8f7}
+  .item.on{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+  .item .id{font-family:var(--mono);font-size:12px;font-weight:600}
+  .item .meta{font-size:11px;color:var(--muted)}
+  .tags{margin-left:auto;display:flex;gap:4px;align-items:center}
+  .tag{font-family:var(--mono);font-size:10px;padding:1px 5px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+  .tag.f{background:var(--bad-soft);color:var(--bad);border-color:#f2cfd1}
+  .tag.h{background:var(--warn-soft);color:var(--warn);border-color:#f0dcbb}
+  .tag.e{background:var(--accent-soft);color:var(--accent);border-color:#cfe4da}
+  .detail{padding:22px 28px 60px;overflow:auto;max-height:calc(100vh - 106px)}
+  .head{display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap}
+  .head h1{font-size:20px;margin:0;font-family:var(--mono)}
+  .head .who{color:var(--muted);font-size:13px}
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0 8px}
+  .fact{border:1px solid var(--line);border-radius:9px;padding:9px 11px;background:var(--panel)}
+  .fact .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .fact .v{font-family:var(--mono);font-size:13.5px;margin-top:3px}
+  .fact .v small{color:var(--muted);font-family:var(--sans)}
+  .split{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+  .card{border:1px solid var(--line);border-radius:11px;background:var(--panel);overflow:hidden}
+  .card .bar{display:flex;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);background:#fcfcfb}
+  .card .body{padding:14px}
+  .fam{font-family:var(--mono);font-size:12px;font-weight:600}
+  .status{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:99px;font-weight:600}
+  .status.finding{background:var(--bad-soft);color:var(--bad)}
+  .status.explained{background:var(--accent-soft);color:var(--accent)}
+  .status.needs_human{background:var(--warn-soft);color:var(--warn)}
+  .claim{font-size:14px;margin:0 0 8px}
+  .detail p{margin:6px 0}
+  .muted{color:var(--muted)}
+  .kv{display:grid;grid-template-columns:200px 1fr;gap:2px 12px;font-family:var(--mono);font-size:12px;margin:10px 0;background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:9px 11px}
+  .kv .k{color:var(--muted)}
+  .ev{border-left:2px solid var(--line);padding:4px 0 4px 10px;margin:6px 0;font-size:12.5px}
+  .ev .src{font-family:var(--mono);font-size:11px;color:var(--accent)}
+  .ev .q{color:#33363a}
+  .acts{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+  button{font-family:var(--sans);font-size:12px;padding:6px 12px;border-radius:7px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink)}
+  button:hover{border-color:#c9cdd2}
+  button.p{background:var(--ink);color:#fff;border-color:var(--ink)}
+  button.good{background:var(--accent);border-color:var(--accent);color:#fff}
+  .note{font-size:11.5px;color:var(--muted);margin-top:6px}
+  .journal{margin-top:18px}
+  .journal .row{display:flex;gap:10px;font-family:var(--mono);font-size:11.5px;padding:5px 0;border-bottom:1px dotted var(--line)}
+  .pill{display:inline-block;font-family:var(--mono);font-size:10.5px;background:#f4f5f4;border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted)}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+  .docrow{display:flex;gap:10px;font-family:var(--mono);font-size:11.5px;color:var(--muted);padding:2px 0}
+  @media (max-width:1100px){.wrap{grid-template-columns:1fr}.queue{max-height:none;border-right:0;border-bottom:1px solid var(--line)}.facts{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div>
+    <div class="word">lekh<span>.</span></div>
+    <div class="sub">policy as code · every claim cited to a page · nothing counts until a person signs</div>
+  </div>
+  <div class="right">
+    <div>policy <b id="pv"></b></div>
+    <div>run <b id="run"></b></div>
+    <div>ledger <b id="tail"></b></div>
+  </div>
+</div>
+
+<div class="strip" id="strip"></div>
+
+<div class="wrap">
+  <div class="queue">
+    <h4>Review queue · oldest first</h4>
+    <input class="search" id="q" placeholder="filter by file id, branch, borrower" />
+    <div class="chips" id="chips">
+      <div class="chip on" data-f="all">All</div>
+      <div class="chip" data-f="finding">Findings</div>
+      <div class="chip" data-f="needs_human">Abstained</div>
+      <div class="chip" data-f="explained">Explained</div>
+      <div class="chip" data-f="clean">Clean</div>
+    </div>
+    <div id="list"></div>
+  </div>
+  <div class="detail" id="detail"><div class="empty">Select a file.</div></div>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+
+const fmt = n => n==null ? "—" : "₹" + Math.round(n).toLocaleString("en-IN");
+const pct = x => x==null ? "—" : (x*100).toFixed(1) + "%";
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let state = {filter:"all", q:"", sel:null, decisions:{}};
+
+function records(){
+  return (DATA && DATA.records) ? DATA.records : [];
+}
+function evalData(){ return (DATA && DATA.eval) ? DATA.eval : null; }
+
+function statusOf(r){
+  if (r.summary.flagged>0) return "finding";
+  if (r.summary.needs_human>0) return "needs_human";
+  if (r.summary.explained>0) return "explained";
+  return "clean";
+}
+
+function renderStrip(){
+  const e = evalData(); const t = e? e.totals : {};
+  const cells = [
+    ["files reviewed", records().length, false],
+    ["defect recall", t.recall!=null ? pct(t.recall) : "—", true],
+    ["precision", t.precision!=null ? pct(t.precision) : "—", true],
+    ["citation validity", t.citation_validity!=null ? pct(t.citation_validity) : "—", true],
+    ["explanations credited", t.explanations_credited!=null ? `${t.explanations_credited}/${t.explanations_expected}` : "—", false],
+    ["baseline recall", e? pct(e.baseline.recall) : "—", false],
+  ];
+  document.getElementById("strip").innerHTML = cells.map(([k,v,good])=>
+    `<div class="cell"><div class="k">${k}</div><div class="v ${good?"good":""}">${v}</div></div>`).join("");
+  if (e) {
+    document.getElementById("pv").textContent = e.policy.version + " · " + e.policy.fingerprint;
+    document.getElementById("run").textContent = (records()[0]||{}).run_id || "—";
+    document.getElementById("tail").textContent = e.determinism.identical ? "chain verified" : "chain differs";
+  }
+}
+
+function renderList(){
+  const q = state.q.toLowerCase();
+  const rows = records().filter(r=>{
+    const s = statusOf(r);
+    if (state.filter!=="all" && s!==state.filter) return false;
+    if (!q) return true;
+    const hay = [r.loan_id, r.facts.branch, r.facts.borrower].join(" ").toLowerCase();
+    return hay.includes(q);
+  });
+  document.getElementById("list").innerHTML = rows.map(r=>{
+    const s = statusOf(r);
+    const tags = [];
+    if (r.summary.flagged) tags.push(`<span class="tag f">${r.summary.flagged}</span>`);
+    if (r.summary.needs_human) tags.push(`<span class="tag h">${r.summary.needs_human}</span>`);
+    if (r.summary.explained) tags.push(`<span class="tag e">${r.summary.explained}</span>`);
+    if (!tags.length) tags.push(`<span class="tag">clean</span>`);
+    return `<div class="item ${state.sel===r.loan_id?"on":""}" data-id="${r.loan_id}">
+      <div><div class="id">${r.loan_id}</div>
+      <div class="meta">${esc(r.facts.branch||"")} · ${esc((r.facts.borrower||"").split(" ")[0]||"")}</div></div>
+      <div class="tags">${tags.join("")}</div></div>`;
+  }).join("") || `<div class="empty">no files match</div>`;
+  document.querySelectorAll(".item").forEach(el=>el.onclick=()=>{state.sel=el.dataset.id;renderList();renderDetail();});
+}
+
+function findingCard(f){
+  const d = f.derivation||{};
+  const skip = new Set(["deviation","deviation_rejected","sample"]);
+  const kv = Object.entries(d).filter(([k,v])=>!skip.has(k) && (typeof v==="number"||typeof v==="string"))
+    .map(([k,v])=>`<div class="k">${k.replace(/_/g," ")}</div><div>${typeof v==="number"? (Math.abs(v)<1 && v!==0 ? pct(v) : v.toLocaleString("en-IN")) : esc(v)}</div>`).join("");
+  const ev = (f.evidence||[]).map(e=>`<div class="ev"><span class="src">${esc(e.doc)} · p.${e.page}</span>
+    ${e.kind==="system_record"?"":`<div class="q">“${esc(e.quote)}”</div>`}</div>`).join("");
+  const rej = (d.deviation_rejected||[]).map(x=>`<div class="ev"><span class="src">${esc(x.deviation_id)} rejected</span>
+    <div class="q">${esc((x.reasons||[]).join("; "))}</div></div>`).join("");
+  const decided = state.decisions[f.id];
+  return `<div class="card">
+    <div class="bar">
+      <span class="status ${f.status}">${f.status==="needs_human"?"abstained":f.status}</span>
+      <span class="fam">${esc(f.family)}</span>
+      <span class="pill">clause ${esc(f.clause)} · p.${f.clause_page}</span>
+      <span class="pill">${esc(f.severity)}</span>
+      ${decided?`<span class="pill" style="margin-left:auto;background:var(--accent-soft);color:var(--accent)">${esc(decided.action)} by ${esc(decided.reviewer.split(",")[0])}</span>`:""}
+    </div>
+    <div class="body">
+      <p class="claim">${esc(f.claim)}</p>
+      ${f.detail?`<p class="muted">${esc(f.detail)}</p>`:""}
+      ${kv?`<div class="kv">${kv}</div>`:""}
+      ${ev}${rej}
+      ${(f.notes||[]).map(n=>`<p class="note">ⓘ ${esc(n)}</p>`).join("")}
+      <div class="acts">
+        <button class="good" onclick="decide('${f.id}','approve')">Approve</button>
+        <button onclick="decide('${f.id}','edit')">Edit</button>
+        <button onclick="decide('${f.id}','reject')">Reject</button>
+        <button onclick="decide('${f.id}','explain')">Ask it to explain</button>
+        <span class="note" style="margin-left:auto">logged under your name, hash-chained</span>
+      </div>
+    </div></div>`;
+}
+
+function decide(fid, action){
+  state.decisions[fid] = {action, reviewer:"A. Mehta, Senior Credit Officer"};
+  renderDetail(); renderJournal();
+}
+
+function renderJournal(){
+  const rows = Object.entries(state.decisions);
+  const el = document.getElementById("journal");
+  if (!el) return;
+  el.innerHTML = rows.length ? rows.map(([id,d],i)=>
+    `<div class="row"><span class="muted">${String(i+1).padStart(3,"0")}</span>
+     <span>${id}</span><span>${esc(d.action)}</span><span class="muted">${esc(d.reviewer.split(",")[0])}</span></div>`).join("")
+    : `<div class="row muted">no decisions in this session yet</div>`;
+}
+
+function renderDetail(){
+  const r = records().find(x=>x.loan_id===state.sel);
+  const el = document.getElementById("detail");
+  if (!r){ el.innerHTML = `<div class="empty">Select a file.</div>`; return; }
+  const f = r.facts;
+  const facts = [
+    ["sanction amount", fmt(f.sanction_amount), ""],
+    ["value on report", fmt(f.appraisal_value), f.memo_valuation && f.memo_valuation!==f.appraisal_value ? `memo says ${fmt(f.memo_valuation)}` : ""],
+    ["income stated", fmt(f.income_stated), ""],
+    ["income verified", fmt(f.income_verified), `from ${(r.findings.length?"statement credits":"—")}`],
+    ["FOIR stated", pct(f.foir_stated), f.income_verified? `recomputed ${pct((f.foir_stated||0))}` : ""],
+    ["LTV stated", pct(f.ltv_stated), ""],
+    ["bureau", f.bureau_score==null?"—":f.bureau_score, (f.dpd_max_12m? f.dpd_max_12m+" DPD":"no DPD")],
+    ["deviations on file", (f.deviations_on_file||[]).length, ""],
+  ].map(([k,v,note])=>`<div class="fact"><div class="k">${k}</div><div class="v">${v}${note?`<br><small>${esc(note)}</small>`:""}</div></div>`).join("");
+
+  const docs = (r.documents||[]).map(d=>`<span class="docrow">${esc(d.name)} · ${d.pages}p · ${d.sha256}${d.tampered?" ⚠ hash changed":""}</span>`).join("");
+  const cards = (r.findings||[]).map(findingCard).join("") ||
+    `<div class="card"><div class="body">No finding against this file under policy ${esc(r.policy_version)}.
+     Every document was read, every ratio recomputed, and the result is a pass — recorded with the digest
+     <span class="pill">${r.digest}</span>.</div></div>`;
+
+  el.innerHTML = `
+    <div class="head">
+      <div>
+        <h1>${esc(r.loan_id)}</h1>
+        <div class="who">${esc(f.borrower||"")} · ${esc(f.branch||"")} branch · sanctioned ${esc(f.sanction_date||"")}</div>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="pill">policy ${esc(r.policy_version)} · ${esc(r.policy_fingerprint)}</div>
+        <div class="pill" style="margin-top:4px">digest ${esc(r.digest)}</div>
+      </div>
+    </div>
+    <div class="facts">${facts}</div>
+    <div class="cards split">${cards}</div>
+    <div class="card journal" style="margin-top:16px">
+      <div class="bar"><span class="fam">journal</span><span class="pill">this session</span></div>
+      <div class="body"><div id="journal"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <div class="bar"><span class="fam">documents on file</span><span class="pill">${(r.documents||[]).length} files</span></div>
+      <div class="body">${docs}</div>
+    </div>`;
+  renderJournal();
+}
+
+document.getElementById("q").oninput = e => { state.q = e.target.value; renderList(); };
+document.querySelectorAll(".chip").forEach(c => c.onclick = () => {
+  document.querySelectorAll(".chip").forEach(x=>x.classList.remove("on"));
+  c.classList.add("on"); state.filter = c.dataset.f; renderList();
+});
+
+renderStrip();
+if (!DATA) {
+  document.getElementById("list").innerHTML = `<div class="empty">Run <code>python -m lekh.cli eval</code> then <code>python -m lekh.cli html</code>.</div>`;
+} else if (records().length) {
+  state.sel = records().find(r=>r.summary.flagged>0)?.loan_id || records()[0].loan_id;
+  renderList(); renderDetail();
+}
+</script>
+</body>
+</html>

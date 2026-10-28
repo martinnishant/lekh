@@ -1,0 +1,104 @@
+{
+  "loan_id": "HL-20175",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "6e2595a5cbb853c1",
+  "findings": [
+    {
+      "id": "4ce1ff3598ec",
+      "case_id": "HL-20175",
+      "rule_id": "R-04",
+      "clause": "4.3",
+      "clause_page": 2,
+      "family": "stale_bureau",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "Bureau report was 69 days old at sanction (report 15 May 2026, sanctioned 23 Jul 2026)",
+      "detail": "Policy requires a report no older than 30 days at sanction.",
+      "derivation": {
+        "report_date": "2026-05-15",
+        "sanction_date": "2026-07-23",
+        "age_days": 69,
+        "limit_days": 30
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "Report date : 15 May 2026"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Sanction date : 23 Jul 2026"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Aditya J Nair",
+    "branch": "Jaipur",
+    "sanction_date": "2026-07-23",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4763000.0,
+    "memo_valuation": 4763000.0,
+    "income_stated": 77500.0,
+    "income_verified": 78566.67,
+    "obligations_verified": 9000.0,
+    "bureau_score": 726,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.47,
+    "ltv_stated": 0.6509999999999999,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "cd7a462e8c89234a",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "10465a992f95e3a0",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "e8a782f1184929de",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "1499e08cb146c1d6",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "57ae063ce2cef706",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "33f1651392017ca8",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

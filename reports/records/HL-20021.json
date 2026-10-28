@@ -1,0 +1,104 @@
+{
+  "loan_id": "HL-20021",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:28+00:00",
+  "digest": "0a286d26ad56105e",
+  "findings": [
+    {
+      "id": "546c5be211e6",
+      "case_id": "HL-20021",
+      "rule_id": "R-12",
+      "clause": "7.3",
+      "clause_page": 5,
+      "family": "pdd_missing",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "2 post-disbursement document(s) not on file: Occupancy certificate, Post-dated cheques (12)",
+      "detail": "Disbursement condition not satisfied by the documents in the credit file.",
+      "derivation": {
+        "missing": [
+          "Occupancy certificate",
+          "Post-dated cheques (12)"
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Occupancy certificate : MISSING"
+        },
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Post-dated cheques (12) : MISSING"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Divya I Kulkarni",
+    "branch": "Pune",
+    "sanction_date": "2026-05-18",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 3100000.0,
+    "memo_valuation": 3100000.0,
+    "income_stated": 109900.0,
+    "income_verified": 110483.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 721,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.18600000000000003,
+    "ltv_stated": 0.758,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "0d5f1b212fdc1ae5",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "8a76701ec145f57e",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "5fa5b0bf6ef29a38",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "fcdc030c1c32cbb6",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "d7cf8941abeb4225",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "78b14c5ea3175da4",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

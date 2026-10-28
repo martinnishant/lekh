@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20364",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:34+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Pooja O Iyer",
+    "branch": "Surat",
+    "sanction_date": "2026-10-12",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4683000.0,
+    "memo_valuation": 4683000.0,
+    "income_stated": 133900.0,
+    "income_verified": 137450.0,
+    "obligations_verified": 41500.0,
+    "bureau_score": 769,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.513,
+    "ltv_stated": 0.662,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "bfd6eec43510bb8c",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "f2c69de2500aa64c",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "d0487c6d2a7a782b",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "0299e827f9f1bb52",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "2b3b3b16261853f6",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "6c70b25a17c2c932",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

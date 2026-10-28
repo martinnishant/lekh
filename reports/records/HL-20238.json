@@ -1,0 +1,152 @@
+{
+  "loan_id": "HL-20238",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:32+00:00",
+  "digest": "64fa3a03a4d443c7",
+  "findings": [
+    {
+      "id": "cca56dd4a233",
+      "case_id": "HL-20238",
+      "rule_id": "R-05",
+      "clause": "5.2",
+      "clause_page": 3,
+      "family": "foir_breach",
+      "status": "explained",
+      "severity": "high",
+      "claim": "FOIR 65.2% exceeds the 55% cap, covered by deviation D-2333",
+      "detail": "Contractual EMI Rs. 23,487 + existing obligations Rs. 64,500 against verified income Rs. 134,867. L2 - Credit Head approved FOIR cap deviation D-2333 valid to 17 Nov 2026.",
+      "derivation": {
+        "foir": 0.6524,
+        "cap": 0.55,
+        "emi_contractual": 23487.04,
+        "obligations_verified": 64500.0,
+        "income_verified": 134866.67,
+        "co_applicant_income": null,
+        "deviation": {
+          "deviation_id": "D-2333",
+          "loan_id": "HL-20238",
+          "clause": "FOIR cap",
+          "approved_by": "L2 - Credit Head",
+          "valid_till": "2026-11-17",
+          "status": "Approved",
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2333 HL-20238 FOIR cap L2 - Credit Head 17 Nov 2026 Approved"
+        },
+        "deviation_rejected": []
+      },
+      "evidence": [
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "20/02/2026 SALARY CREDIT - NEFT 1,34,500 2,79,500"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "22/03/2026 SALARY CREDIT - NEFT 1,39,300 4,18,800"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 3,
+          "quote": "04/08/2026 ACH DEBIT - LOAN EMI 64,500"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Sanctioned amount : Rs. 23,50,000/-"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "EMI at sanction : Rs. 23,487/-"
+        },
+        {
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2333 HL-20238 FOIR cap L2 - Credit Head 17 Nov 2026 Approved"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": [
+        "Co-applicant income of Rs. 42,800 is stated but not evidenced by a statement in the file, so it is excluded from the ratio."
+      ]
+    }
+  ],
+  "facts": {
+    "borrower": "Aditya Y Chauhan",
+    "branch": "Indore",
+    "sanction_date": "2026-08-19",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2809000.0,
+    "memo_valuation": 2809000.0,
+    "income_stated": 133700.0,
+    "income_verified": 134866.67,
+    "obligations_verified": 64500.0,
+    "bureau_score": 776,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.6579999999999999,
+    "ltv_stated": 0.8370000000000001,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2333",
+        "loan_id": "HL-20238",
+        "clause": "FOIR cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-11-17",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2333 HL-20238 FOIR cap L2 - Credit Head 17 Nov 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "2914c9e86bcbe333",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "e83c6c463f52ab02",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "b0bcd0f410e2128a",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "a4a8766ff2215790",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "0d5ddcdc4ca3fb45",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "d23d42531f616ea7",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 1,
+    "needs_human": 0
+  }
+}

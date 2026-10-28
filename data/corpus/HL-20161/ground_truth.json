@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20161",
+  "branch": "Pune",
+  "sanction_amount": 4800000,
+  "purchase_price": 6235000.0,
+  "appraised_value": 7185000.0,
+  "memo_valuation": 7185000.0,
+  "income_memo": 136300.0,
+  "income_statement": 134400.0,
+  "obligations_memo": 21000,
+  "obligations_statement": 21000,
+  "bureau_score": 739,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 5,
+  "rate": 8.75,
+  "tenure_months": 300,
+  "emi_true": 39462.89,
+  "foir_true": 0.4479,
+  "ltv_true": 0.6681,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "tamper"
+  ],
+  "applicant": "Vikram Y Gupta",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "tamper",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,37 @@
+{
+  "loan_id": "HL-20021",
+  "branch": "Pune",
+  "sanction_amount": 2350000,
+  "purchase_price": 2935000.0,
+  "appraised_value": 3100000.0,
+  "memo_valuation": 3100000.0,
+  "income_memo": 109900.0,
+  "income_statement": 110483.33,
+  "obligations_memo": 0,
+  "obligations_statement": 0,
+  "bureau_score": 721,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 13,
+  "rate": 8.5,
+  "tenure_months": 240,
+  "emi_true": 20393.85,
+  "foir_true": 0.1854,
+  "ltv_true": 0.7581,
+  "ltv_cap": 0.9,
+  "deviations": [],
+  "seeded": [
+    "pdd_missing"
+  ],
+  "applicant": "Divya I Kulkarni",
+  "pdd_missing": [
+    "Post-dated cheques (12)",
+    "Occupancy certificate"
+  ],
+  "expected": [
+    {
+      "family": "pdd_missing",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

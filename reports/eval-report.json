@@ -1,0 +1,2141 @@
+{
+  "cases": [
+    {
+      "loan_id": "HL-20007",
+      "expected": [
+        [
+          "conflicting_valuation",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "valuation_conflict",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20014",
+      "expected": [
+        [
+          "missing_document",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "missing_document",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20021",
+      "expected": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20028",
+      "expected": [
+        [
+          "ambiguous_label",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "income_mismatch",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20035",
+      "expected": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20042",
+      "expected": [
+        [
+          "conflicting_valuation",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "valuation_conflict",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20049",
+      "expected": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20056",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20063",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20070",
+      "expected": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20077",
+      "expected": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20084",
+      "expected": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "predicted": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "tp": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20091",
+      "expected": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "pdd_missing",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20098",
+      "expected": [
+        [
+          "missing_document",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "missing_document",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20105",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20112",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20119",
+      "expected": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "arithmetic_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20126",
+      "expected": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "predicted": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "tp": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20133",
+      "expected": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20140",
+      "expected": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20147",
+      "expected": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20154",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20161",
+      "expected": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20168",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20175",
+      "expected": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20182",
+      "expected": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20189",
+      "expected": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20196",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20203",
+      "expected": [
+        [
+          "ambiguous_label",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "income_mismatch",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20210",
+      "expected": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "predicted": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "tp": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20217",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20224",
+      "expected": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20231",
+      "expected": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20238",
+      "expected": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "predicted": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "tp": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20245",
+      "expected": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "predicted": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "tp": [
+        [
+          "foir_breach",
+          "explained"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20252",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20259",
+      "expected": [
+        [
+          "scanned_document",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "unreadable_document",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20266",
+      "expected": [
+        [
+          "conflicting_valuation",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "valuation_conflict",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20273",
+      "expected": [
+        [
+          "ocr_noise",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "extraction_gap",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20280",
+      "expected": [
+        [
+          "ocr_noise",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "extraction_gap",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20287",
+      "expected": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "predicted": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "tp": [
+        [
+          "ltv_breach",
+          "explained"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20294",
+      "expected": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20301",
+      "expected": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20308",
+      "expected": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20315",
+      "expected": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "bureau_low",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20322",
+      "expected": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20329",
+      "expected": [
+        [
+          "scanned_document",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "unreadable_document",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20336",
+      "expected": [
+        [
+          "ocr_noise",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "extraction_gap",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20343",
+      "expected": [
+        [
+          "foir_breach",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "foir_breach",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "foir_breach",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20350",
+      "expected": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "kyc_name_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20357",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20364",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20371",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20378",
+      "expected": [
+        [
+          "missing_document",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "missing_document",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20385",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20392",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20399",
+      "expected": [
+        [
+          "foir_breach",
+          "finding"
+        ],
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "foir_breach",
+          "finding"
+        ],
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "foir_breach",
+          "finding"
+        ],
+        [
+          "income_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20406",
+      "expected": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "stale_bureau",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20413",
+      "expected": [
+        [
+          "foir_breach",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "foir_breach",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "foir_breach",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20420",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20427",
+      "expected": [
+        [
+          "ambiguous_label",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "income_mismatch",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20434",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20441",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20448",
+      "expected": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "tamper",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20455",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20462",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20469",
+      "expected": [
+        [
+          "scanned_document",
+          "needs_human"
+        ]
+      ],
+      "predicted": [
+        [
+          "unreadable_document",
+          "needs_human"
+        ]
+      ],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": true,
+      "needs_human_emitted": true,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20476",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20483",
+      "expected": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20490",
+      "expected": [],
+      "predicted": [],
+      "tp": [],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 0.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20497",
+      "expected": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "dpd_delinquency",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    },
+    {
+      "loan_id": "HL-20504",
+      "expected": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "predicted": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "tp": [
+        [
+          "valuation_mismatch",
+          "finding"
+        ]
+      ],
+      "fn": [],
+      "fp": [],
+      "needs_human_expected": false,
+      "needs_human_emitted": false,
+      "needs_human_correct": true,
+      "unnecessary_abstention": false,
+      "exact": true,
+      "citations": {
+        "validity": 1.0,
+        "failed": 0
+      }
+    }
+  ],
+  "citations": {
+    "checked": 113,
+    "failed": 0,
+    "system_records": 6,
+    "failures": []
+  },
+  "by_family": {
+    "arithmetic_mismatch": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    },
+    "bureau_low": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 3,
+      "recall": 1.0,
+      "baseline_recall": 1.0
+    },
+    "dpd_delinquency": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 3,
+      "recall": 1.0,
+      "baseline_recall": 1.0
+    },
+    "foir_breach": {
+      "expected": 6,
+      "detected": 6,
+      "status_wrong": 0,
+      "baseline_detected": 6,
+      "recall": 1.0,
+      "baseline_recall": 1.0
+    },
+    "income_mismatch": {
+      "expected": 4,
+      "detected": 4,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    },
+    "kyc_name_mismatch": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    },
+    "ltv_breach": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 3,
+      "recall": 1.0,
+      "baseline_recall": 1.0
+    },
+    "pdd_missing": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    },
+    "stale_bureau": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    },
+    "tamper": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    },
+    "valuation_mismatch": {
+      "expected": 3,
+      "detected": 3,
+      "status_wrong": 0,
+      "baseline_detected": 0,
+      "recall": 1.0,
+      "baseline_recall": 0.0
+    }
+  },
+  "totals": {
+    "cases": 72,
+    "exact_case_match": 1.0,
+    "defects_expected": 37,
+    "defects_detected": 37,
+    "defects_missed": 0,
+    "recall": 1.0,
+    "false_positives": 0,
+    "precision": 1.0,
+    "clean_files": 21,
+    "false_positives_on_clean_files": 0,
+    "explanations_expected": 6,
+    "explanations_credited": 6,
+    "abstention_cases_expected": 15,
+    "abstention_cases_correct": 15,
+    "unnecessary_abstentions": 0,
+    "citation_validity": 1.0,
+    "citations_checked": 113
+  },
+  "baseline": {
+    "recall": 0.2432,
+    "precision": 0.5625,
+    "false_positives": 7,
+    "defects_missed": 28
+  },
+  "determinism": {
+    "digests_run1": [
+      "d676c58ea7e76b66",
+      "9a2383daed900fb1",
+      "0a286d26ad56105e",
+      "9e9050b0a8d43785",
+      "2aef401a5c860875",
+      "e4cc3d2bdedf5405",
+      "ee117563cd8ff50f",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "8f4921e3a4929eda",
+      "db47a4acff5a331a",
+      "70472bf0c81d2608",
+      "d0a84b77638c97fd",
+      "1feedc1ab218b28e",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "149ed087551dc155",
+      "fb68ef16e1c37520",
+      "8a1ca7c87c373646",
+      "bb6764de21f160e8",
+      "43c1363e388f3314",
+      "4f53cda18c2baa0c",
+      "23764794e545b2fc",
+      "4f53cda18c2baa0c",
+      "6e2595a5cbb853c1",
+      "08f2fd17bca28261",
+      "9de316738af5fe10",
+      "4f53cda18c2baa0c",
+      "4e7ec5c2b23f390a",
+      "656a0a847a5e3a4a",
+      "4f53cda18c2baa0c",
+      "26d385f91d688a34",
+      "2540caf2fb543081",
+      "64fa3a03a4d443c7",
+      "8898961f111081d6",
+      "4f53cda18c2baa0c",
+      "1afff23e6def6829",
+      "5a17b4106f14bb71",
+      "eb57f5c7871f194c",
+      "105de17e0f6ea44c",
+      "d33007800b4a31a3",
+      "f06e25ebc56efe66",
+      "a21ebd0826a3ac3e",
+      "b130e78989c6c98a",
+      "9fe810759a412c7f",
+      "a3d1f9321ba16109",
+      "e8fab0506828457f",
+      "47ce85e40dc0ccb9",
+      "8a2d1a94c797a1a9",
+      "197e03a518e85db6",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "24752c034426e106",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "913aab8f660a0205",
+      "594856f959fef0b8",
+      "d30ab61e99e3cc20",
+      "4f53cda18c2baa0c",
+      "9c6d1d7e4ac734a6",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "56fdb41787043885",
+      "4f53cda18c2baa0c",
+      "4f53cda18c2baa0c",
+      "7de670ce722aa757",
+      "4f53cda18c2baa0c",
+      "83eb0abc12927715",
+      "4f53cda18c2baa0c",
+      "0a76a374cc1ce0e7",
+      "7992bcab71b43cab"
+    ],
+    "identical": true,
+    "policy_fingerprint": "50cfe28124777015"
+  },
+  "runtime_seconds": 19.38,
+  "policy": {
+    "name": "Retail Home Loan Credit Policy",
+    "version": "3.2",
+    "fingerprint": "50cfe28124777015",
+    "rules": 15
+  },
+  "corpus": {
+    "path": "/Users/nishant123/Downloads/lekh/data/corpus",
+    "cases": 72
+  },
+  "notes": []
+}

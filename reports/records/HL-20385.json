@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20385",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:35+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Rohan B Verma",
+    "branch": "Surat",
+    "sanction_date": "2026-10-21",
+    "sanction_amount": 2450000.0,
+    "appraisal_value": 3941000.0,
+    "memo_valuation": 3941000.0,
+    "income_stated": 95000.0,
+    "income_verified": 96133.33,
+    "obligations_verified": 6500.0,
+    "bureau_score": 746,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.28,
+    "ltv_stated": 0.622,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "fcc9efc72432a3b9",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "f08b2b91552cce1d",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "3cb04aa1b6317c1e",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "f8ae3d1cf984f9d8",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "388caeecb46f6d93",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "9f8630efdd2d0700",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

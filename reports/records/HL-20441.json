@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20441",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:36+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Meera M Gupta",
+    "branch": "Pune",
+    "sanction_date": "2026-11-14",
+    "sanction_amount": 2450000.0,
+    "appraisal_value": 3672000.0,
+    "memo_valuation": 3672000.0,
+    "income_stated": 128000.0,
+    "income_verified": 129716.67,
+    "obligations_verified": 6500.0,
+    "bureau_score": 743,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.20800000000000002,
+    "ltv_stated": 0.667,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "ebdb4578435a86f9",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "a94349b02cf703f6",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "d06acbc88fc0448e",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "594893b62154d7f7",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "38a11baaa30cafa2",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "8a82db4c77a70dd5",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

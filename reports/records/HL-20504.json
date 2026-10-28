@@ -1,0 +1,106 @@
+{
+  "loan_id": "HL-20504",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:37+00:00",
+  "digest": "7992bcab71b43cab",
+  "findings": [
+    {
+      "id": "04013365627d",
+      "case_id": "HL-20504",
+      "rule_id": "R-08",
+      "clause": "6.3",
+      "clause_page": 4,
+      "family": "valuation_mismatch",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "Memo carries Rs. 7,189,000 as value; the valuation report says Rs. 6,841,000 (+5.1%)",
+      "detail": "The LTV stated in the memorandum is computed on a value the valuer did not give. Recomputed on the report, the ratio is different.",
+      "derivation": {
+        "memo_valuation": 7189000.0,
+        "report_valuation": 6841000.0,
+        "gap": 0.0509,
+        "tolerance": 0.02,
+        "ltv_on_memo": 0.6677,
+        "ltv_on_report": 0.7017
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Value as per valuation report : Rs. 71,89,000/-"
+        },
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Value as per valuation report : Rs. 68,41,000/-"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Anjali R Verma",
+    "branch": "Indore",
+    "sanction_date": "2026-12-11",
+    "sanction_amount": 4800000.0,
+    "appraisal_value": 6841000.0,
+    "memo_valuation": 7189000.0,
+    "income_stated": 91200.0,
+    "income_verified": 91933.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 784,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.462,
+    "ltv_stated": 0.6679999999999999,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "1858cb40cc78e7cd",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "ec916a353cd57d21",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "c17a4e98977e6d73",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "7dbbfe5d42913af4",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "a7d1a665e2f25cf1",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "d8b3585c31eb2e0e",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

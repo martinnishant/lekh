@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20028",
+  "branch": "Thane",
+  "sanction_amount": 7200000,
+  "purchase_price": 10033000.0,
+  "appraised_value": 11513000.0,
+  "memo_valuation": 11513000.0,
+  "income_memo": 135500.0,
+  "income_statement": 134716.67,
+  "obligations_memo": 7000,
+  "obligations_statement": 7000,
+  "bureau_score": 736,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 23,
+  "rate": 8.65,
+  "tenure_months": 240,
+  "emi_true": 63168.5,
+  "foir_true": 0.5198,
+  "ltv_true": 0.6254,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "ambiguous_label"
+  ],
+  "applicant": "Priya I Joshi",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "ambiguous_label",
+      "status": "needs_human"
+    }
+  ],
+  "notes": []
+}

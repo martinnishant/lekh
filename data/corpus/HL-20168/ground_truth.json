@@ -1,0 +1,38 @@
+{
+  "loan_id": "HL-20168",
+  "branch": "Nagpur",
+  "sanction_amount": 6400000,
+  "purchase_price": 8606000.0,
+  "appraised_value": 9216000.0,
+  "memo_valuation": 9216000.0,
+  "income_memo": 134000.0,
+  "income_statement": 135683.33,
+  "obligations_memo": 4000,
+  "obligations_statement": 4000,
+  "bureau_score": 771,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 24,
+  "rate": 9.0,
+  "tenure_months": 180,
+  "emi_true": 64913.06,
+  "foir_true": 0.5105,
+  "ltv_true": 0.6944,
+  "ltv_cap": 0.8,
+  "deviations": [
+    {
+      "deviation_id": "D-2623",
+      "loan_id": "HL-20168",
+      "clause": "FOIR cap",
+      "approved_by": "L2 - Credit Head",
+      "valid_till": "19 Jul 2026",
+      "status": "Approved"
+    }
+  ],
+  "seeded": [
+    "deviation_boundary"
+  ],
+  "applicant": "Meera X Iyer",
+  "pdd_missing": [],
+  "expected": [],
+  "notes": []
+}

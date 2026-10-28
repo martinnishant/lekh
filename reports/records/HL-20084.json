@@ -1,0 +1,132 @@
+{
+  "loan_id": "HL-20084",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:29+00:00",
+  "digest": "70472bf0c81d2608",
+  "findings": [
+    {
+      "id": "999f9d6220f6",
+      "case_id": "HL-20084",
+      "rule_id": "R-06",
+      "clause": "6.2",
+      "clause_page": 4,
+      "family": "ltv_breach",
+      "status": "explained",
+      "severity": "high",
+      "claim": "LTV 79.7% exceeds the 75% slab cap, covered by D-2411",
+      "detail": "Loan Rs. 8,100,000 on a report value of Rs. 10,164,000. Deviation D-2411 approved by L2 - Credit Head is valid to 12 Sep 2026.",
+      "derivation": {
+        "ltv": 0.7969,
+        "cap": 0.75,
+        "loan": 8100000.0,
+        "value": 10164000.0,
+        "deviation": {
+          "deviation_id": "D-2411",
+          "loan_id": "HL-20084",
+          "clause": "LTV cap",
+          "approved_by": "L2 - Credit Head",
+          "valid_till": "2026-09-12",
+          "status": "Approved",
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2411 HL-20084 LTV cap L2 - Credit Head 12 Sep 2026 Approved"
+        }
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Sanction amount : Rs. 81,00,000/-"
+        },
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Appraised value (technical) : Rs. 1,01,64,000/-"
+        },
+        {
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2411 HL-20084 LTV cap L2 - Credit Head 12 Sep 2026 Approved"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Rohan M Joshi",
+    "branch": "Surat",
+    "sanction_date": "2026-06-14",
+    "sanction_amount": 8100000.0,
+    "appraisal_value": 10164000.0,
+    "memo_valuation": 10164000.0,
+    "income_stated": 164800.0,
+    "income_verified": 165166.67,
+    "obligations_verified": 0.0,
+    "bureau_score": 721,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.506,
+    "ltv_stated": 0.797,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2411",
+        "loan_id": "HL-20084",
+        "clause": "LTV cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-09-12",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2411 HL-20084 LTV cap L2 - Credit Head 12 Sep 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "ffef5c2d3f567e15",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "1ef5bfb345a8b60d",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "15167ca7122ce244",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "03f85b2f01862ed9",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "05ea19cc1f176f80",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "8f7a6daa0e3c6683",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 1,
+    "needs_human": 0
+  }
+}

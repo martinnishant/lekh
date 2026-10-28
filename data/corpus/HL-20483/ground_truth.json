@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20483",
+  "branch": "Surat",
+  "sanction_amount": 7200000,
+  "purchase_price": 9359000.0,
+  "appraised_value": 10029000.0,
+  "memo_valuation": 10029000.0,
+  "income_memo": 117400.0,
+  "income_statement": 116883.33,
+  "obligations_memo": 500,
+  "obligations_statement": 500,
+  "bureau_score": 723,
+  "dpd_max_12m": 35,
+  "bureau_lag_days": 9,
+  "rate": 8.65,
+  "tenure_months": 300,
+  "emi_true": 58705.95,
+  "foir_true": 0.5043,
+  "ltv_true": 0.7179,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "dpd_delinquency"
+  ],
+  "applicant": "Rohan S Reddy",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "dpd_delinquency",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,109 @@
+{
+  "loan_id": "HL-20308",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "b130e78989c6c98a",
+  "findings": [
+    {
+      "id": "b921c1fc02ff",
+      "case_id": "HL-20308",
+      "rule_id": "R-07",
+      "clause": "5.4",
+      "clause_page": 3,
+      "family": "income_mismatch",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Stated income Rs. 186,200 against verified Rs. 157,933 (+17.9%)",
+      "detail": "The memorandum's income line does not reconcile to the salary credits on the statement. The verified figure is the one the ratio was tested on.",
+      "derivation": {
+        "income_stated": 186200.0,
+        "income_verified": 157933.33,
+        "gap": 0.179,
+        "tolerance": 0.1
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "Net salary credit (applicant) : Rs. 1,86,200/-"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "22/03/2026 SALARY CREDIT - NEFT 1,56,700 3,01,700"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "21/04/2026 SALARY CREDIT - NEFT 1,54,200 4,55,900"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Aditya S Menon",
+    "branch": "Thane",
+    "sanction_date": "2026-09-18",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2889000.0,
+    "memo_valuation": 2889000.0,
+    "income_stated": 186200.0,
+    "income_verified": 157933.33,
+    "obligations_verified": 21000.0,
+    "bureau_score": 758,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.21600000000000003,
+    "ltv_stated": 0.813,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "52c2643faa90242f",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "a24d45ee184d0756",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "3c52c8214edeebb5",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "2b06a724f8745a4b",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "b4082a01f4aca8ea",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "79df68b4c38f0011",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

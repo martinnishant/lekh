@@ -1,0 +1,188 @@
+{
+  "loan_id": "HL-20399",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:35+00:00",
+  "digest": "913aab8f660a0205",
+  "findings": [
+    {
+      "id": "2e9ed15ea9a5",
+      "case_id": "HL-20399",
+      "rule_id": "R-05",
+      "clause": "5.2",
+      "clause_page": 3,
+      "family": "foir_breach",
+      "status": "finding",
+      "severity": "high",
+      "claim": "FOIR 73.8% breaches the 55% cap with no valid approval",
+      "detail": "D-2556: registered against HL-90056, not this file Contractual EMI Rs. 63,023 + obligations Rs. 9,000 against verified income Rs. 97,550.",
+      "derivation": {
+        "foir": 0.7383,
+        "cap": 0.55,
+        "emi_contractual": 63023.33,
+        "obligations_verified": 9000.0,
+        "income_verified": 97550.0,
+        "co_applicant_income": null,
+        "deviation_rejected": [
+          {
+            "deviation_id": "D-2556",
+            "loan_id": "HL-90056",
+            "clause": "FOIR cap",
+            "approved_by": "L2 - Credit Head",
+            "valid_till": "2027-01-25",
+            "status": "Approved",
+            "doc": "deviation_register.pdf",
+            "page": 1,
+            "quote": "D-2556 HL-90056 FOIR cap L2 - Credit Head 25 Jan 2027 Approved",
+            "reasons": [
+              "registered against HL-90056, not this file"
+            ]
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "30/04/2026 SALARY CREDIT - NEFT 95,100 2,40,100"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "30/05/2026 SALARY CREDIT - NEFT 95,100 3,35,200"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 3,
+          "quote": "12/10/2026 ACH DEBIT - LOAN EMI 9,000"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Loan amount sanctioned : Rs. 64,00,000/-"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "EMI at sanction : Rs. 63,023/-"
+        }
+      ],
+      "deviation_rejected": true,
+      "notes": [
+        "Co-applicant income of Rs. 25,100 is stated but not evidenced by a statement in the file, so it is excluded from the ratio."
+      ]
+    },
+    {
+      "id": "99f9998d3e09",
+      "case_id": "HL-20399",
+      "rule_id": "R-07",
+      "clause": "5.4",
+      "clause_page": 3,
+      "family": "income_mismatch",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Stated income Rs. 78,500 against verified Rs. 97,550 (-19.5%)",
+      "detail": "The memorandum's income line does not reconcile to the salary credits on the statement. The verified figure is the one the ratio was tested on.",
+      "derivation": {
+        "income_stated": 78500.0,
+        "income_verified": 97550.0,
+        "gap": -0.1953,
+        "tolerance": 0.1
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "Net take-home (applicant) : Rs. 78,500/-"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "30/04/2026 SALARY CREDIT - NEFT 95,100 2,40,100"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "30/05/2026 SALARY CREDIT - NEFT 95,100 3,35,200"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Priya H Kulkarni",
+    "branch": "Indore",
+    "sanction_date": "2026-10-27",
+    "sanction_amount": 6400000.0,
+    "appraisal_value": 8380000.0,
+    "memo_valuation": 8380000.0,
+    "income_stated": 78500.0,
+    "income_verified": 97550.0,
+    "obligations_verified": 9000.0,
+    "bureau_score": 780,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.917,
+    "ltv_stated": 0.764,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2556",
+        "loan_id": "HL-90056",
+        "clause": "FOIR cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2027-01-25",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2556 HL-90056 FOIR cap L2 - Credit Head 25 Jan 2027 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "94ea0c884ea00821",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "e22f1d648e7d8b15",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "c5b6a1c994269372",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "03bfb4b2bcf26b8c",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "95a9bdc5ab144a16",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "788b49d6d83aae3f",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 2,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "loan_id": "HL-20133",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:30+00:00",
+  "digest": "8a1ca7c87c373646",
+  "findings": [
+    {
+      "id": "de679b47a1d5",
+      "case_id": "HL-20133",
+      "rule_id": "R-02",
+      "clause": "4.1",
+      "clause_page": 2,
+      "family": "bureau_low",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Bureau score 640 is below the policy floor of 700",
+      "detail": "The report on file scores 640. Policy requires 700 or better at sanction.",
+      "derivation": {
+        "score": 640,
+        "floor": 700,
+        "shortfall": 60
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "CIBIL score : 640"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Priya T Gupta",
+    "branch": "Surat",
+    "sanction_date": "2026-07-05",
+    "sanction_amount": 8100000.0,
+    "appraisal_value": 13197000.0,
+    "memo_valuation": 13197000.0,
+    "income_stated": 164800.0,
+    "income_verified": 162200.0,
+    "obligations_verified": 0.0,
+    "bureau_score": 640,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.491,
+    "ltv_stated": 0.614,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "86061a90c4e226ca",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "74585bf0e739e50d",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "9c81c2783e8e1d5d",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "dbf1e52a25e20b00",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "ef138e9339da489c",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "44c27f58146e0162",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

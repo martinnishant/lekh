@@ -1,0 +1,132 @@
+{
+  "loan_id": "HL-20287",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "d33007800b4a31a3",
+  "findings": [
+    {
+      "id": "48b8fa6857d4",
+      "case_id": "HL-20287",
+      "rule_id": "R-06",
+      "clause": "6.2",
+      "clause_page": 4,
+      "family": "ltv_breach",
+      "status": "explained",
+      "severity": "high",
+      "claim": "LTV 89.2% exceeds the 80% slab cap, covered by D-2440",
+      "detail": "Loan Rs. 5,200,000 on a report value of Rs. 5,827,000. Deviation D-2440 approved by L2 - Credit Head is valid to 08 Dec 2026.",
+      "derivation": {
+        "ltv": 0.8924,
+        "cap": 0.8,
+        "loan": 5200000.0,
+        "value": 5827000.0,
+        "deviation": {
+          "deviation_id": "D-2440",
+          "loan_id": "HL-20287",
+          "clause": "LTV cap",
+          "approved_by": "L2 - Credit Head",
+          "valid_till": "2026-12-08",
+          "status": "Approved",
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2440 HL-20287 LTV cap L2 - Credit Head 08 Dec 2026 Approved"
+        }
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Loan amount sanctioned : Rs. 52,00,000/-"
+        },
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Technical valuation : Rs. 58,27,000/-"
+        },
+        {
+          "doc": "deviation_register.pdf",
+          "page": 1,
+          "quote": "D-2440 HL-20287 LTV cap L2 - Credit Head 08 Dec 2026 Approved"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Rahul C Nair",
+    "branch": "Pune",
+    "sanction_date": "2026-09-09",
+    "sanction_amount": 5200000.0,
+    "appraisal_value": 5827000.0,
+    "memo_valuation": 5827000.0,
+    "income_stated": 135500.0,
+    "income_verified": 133100.0,
+    "obligations_verified": 0.0,
+    "bureau_score": 770,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.389,
+    "ltv_stated": 0.892,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2440",
+        "loan_id": "HL-20287",
+        "clause": "LTV cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-12-08",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2440 HL-20287 LTV cap L2 - Credit Head 08 Dec 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "8d0c8003e5f602b5",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "8e92e361e1ea1a5f",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "64b76eb2a1edd0c5",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "ca939d549f477e2b",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "77a3dfcd048467d9",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "781d24565eb0e540",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 1,
+    "needs_human": 0
+  }
+}

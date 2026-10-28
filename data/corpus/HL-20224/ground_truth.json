@@ -1,0 +1,36 @@
+{
+  "loan_id": "HL-20224",
+  "branch": "Surat",
+  "sanction_amount": 8100000,
+  "purchase_price": 10141000.0,
+  "appraised_value": 11770000.0,
+  "memo_valuation": 13093000.0,
+  "income_memo": 148200.0,
+  "income_statement": 146566.67,
+  "obligations_memo": 0,
+  "obligations_statement": 0,
+  "bureau_score": 777,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 21,
+  "rate": 9.25,
+  "tenure_months": 240,
+  "emi_true": 74185.21,
+  "foir_true": 0.5006,
+  "ltv_true": 0.6882,
+  "ltv_cap": 0.75,
+  "deviations": [],
+  "seeded": [
+    "valuation_mismatch"
+  ],
+  "applicant": "Rohan B Verma",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "valuation_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": [
+    "memo valuation pushed the LTV under the cap on paper only"
+  ]
+}

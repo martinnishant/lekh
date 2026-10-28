@@ -1,0 +1,109 @@
+{
+  "loan_id": "HL-20182",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "08f2fd17bca28261",
+  "findings": [
+    {
+      "id": "11a39abf8859",
+      "case_id": "HL-20182",
+      "rule_id": "R-07",
+      "clause": "5.4",
+      "clause_page": 3,
+      "family": "income_mismatch",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Stated income Rs. 186,700 against verified Rs. 157,900 (+18.2%)",
+      "detail": "The memorandum's income line does not reconcile to the salary credits on the statement. The verified figure is the one the ratio was tested on.",
+      "derivation": {
+        "income_stated": 186700.0,
+        "income_verified": 157900.0,
+        "gap": 0.1824,
+        "tolerance": 0.1
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 2,
+          "quote": "Net monthly income (applicant) : Rs. 1,86,700/-"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "27/01/2026 SALARY CREDIT - NEFT 1,52,700 2,97,700"
+        },
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "26/02/2026 SALARY CREDIT - NEFT 1,59,800 4,57,500"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Rahul G Joshi",
+    "branch": "Indore",
+    "sanction_date": "2026-07-26",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4795000.0,
+    "memo_valuation": 4795000.0,
+    "income_stated": 186700.0,
+    "income_verified": 157900.0,
+    "obligations_verified": 4500.0,
+    "bureau_score": 751,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.18899999999999997,
+    "ltv_stated": 0.647,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "1ac5978e91f82ff6",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "7065c6e76147e95b",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "b5e4c7a706870abd",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "9bc43ad2cb187fb5",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "f7edd79924698c75",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "7e63ce834ddf1147",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

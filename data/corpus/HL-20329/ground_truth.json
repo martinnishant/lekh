@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20329",
+  "branch": "Nagpur",
+  "sanction_amount": 2350000,
+  "purchase_price": 2580000.0,
+  "appraised_value": 2817000.0,
+  "memo_valuation": 2817000.0,
+  "income_memo": 91500.0,
+  "income_statement": 92516.67,
+  "obligations_memo": 4500,
+  "obligations_statement": 4500,
+  "bureau_score": 740,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 25,
+  "rate": 8.75,
+  "tenure_months": 180,
+  "emi_true": 23487.04,
+  "foir_true": 0.3042,
+  "ltv_true": 0.8342,
+  "ltv_cap": 0.9,
+  "deviations": [],
+  "seeded": [
+    "scanned_document"
+  ],
+  "applicant": "Rohan W Chauhan",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "scanned_document",
+      "status": "needs_human"
+    }
+  ],
+  "notes": []
+}

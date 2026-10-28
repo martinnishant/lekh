@@ -1,0 +1,43 @@
+{
+  "loan_id": "HL-20126",
+  "branch": "Kochi",
+  "sanction_amount": 3100000,
+  "purchase_price": 4558000.0,
+  "appraised_value": 4673000.0,
+  "memo_valuation": 4673000.0,
+  "income_memo": 135200.0,
+  "income_statement": 137550.0,
+  "obligations_memo": 54500,
+  "obligations_statement": 54500,
+  "bureau_score": 774,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 17,
+  "rate": 8.65,
+  "tenure_months": 180,
+  "emi_true": 30800.11,
+  "foir_true": 0.6319,
+  "ltv_true": 0.6634,
+  "ltv_cap": 0.8,
+  "deviations": [
+    {
+      "deviation_id": "D-2317",
+      "loan_id": "HL-20126",
+      "clause": "FOIR cap",
+      "approved_by": "L2 - Credit Head",
+      "valid_till": "30 Sep 2026",
+      "status": "Approved"
+    }
+  ],
+  "seeded": [
+    "foir_explained"
+  ],
+  "applicant": "Aditya Q Joshi",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "foir_breach",
+      "status": "explained"
+    }
+  ],
+  "notes": []
+}

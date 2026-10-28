@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20217",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:31+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Meera D Kulkarni",
+    "branch": "Nashik",
+    "sanction_date": "2026-08-10",
+    "sanction_amount": 4150000.0,
+    "appraisal_value": 6818000.0,
+    "memo_valuation": 6818000.0,
+    "income_stated": 128000.0,
+    "income_verified": 127450.0,
+    "obligations_verified": 0.0,
+    "bureau_score": 766,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.284,
+    "ltv_stated": 0.609,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "8e53e96d92f3f017",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "fa4a5ea71b18d08f",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "7ee846a1e6911768",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "73fec4687c236dcb",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "eeb5330531daf2d3",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "5b1f26ccde0358bf",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

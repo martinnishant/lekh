@@ -1,0 +1,107 @@
+{
+  "loan_id": "HL-20350",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:34+00:00",
+  "digest": "197e03a518e85db6",
+  "findings": [
+    {
+      "id": "58fa090f6eae",
+      "case_id": "HL-20350",
+      "rule_id": "R-10",
+      "clause": "7.2",
+      "clause_page": 5,
+      "family": "kyc_name_mismatch",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Name on PAN (Kavya Sharma) does not match the name on Aadhaar (Kavya V Kulkarni)",
+      "detail": "Identity documents in the file disagree. A name change is acceptable only with the supporting instrument on record; none is in the file.",
+      "derivation": {
+        "aadhaar": "Kavya V Kulkarni",
+        "pan": "Kavya Sharma",
+        "memo": "Kavya V Kulkarni",
+        "differing_tokens": [
+          "kulkarni",
+          "sharma"
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Aadhaar name : Kavya V Kulkarni"
+        },
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "PAN name : Kavya Sharma"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Kavya V Kulkarni",
+    "branch": "Indore",
+    "sanction_date": "2026-10-06",
+    "sanction_amount": 7200000.0,
+    "appraisal_value": 10989000.0,
+    "memo_valuation": 10989000.0,
+    "income_stated": 138900.0,
+    "income_verified": 138583.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 753,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.518,
+    "ltv_stated": 0.655,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "248e35fe5172548c",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "4c0d970aa90bdda0",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "bc2a7c8f9658fabe",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "0ed589091c9776cf",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "b356c42e0303ffab",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "193a91e31849c0af",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

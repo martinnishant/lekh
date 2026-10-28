@@ -1,0 +1,12 @@
+{
+  "loan_id": "HL-20189",
+  "documents": {
+    "sanction_memo.pdf": "65369bb80a3758a635e3684886f32764747ba2e705218f22670a3a42c6187d11",
+    "bank_statement.pdf": "1eca7e1e14912a286a32ab8baec3787b07cb40da6f5b328c21c5315f843778f0",
+    "appraisal_report.pdf": "c260129bbc3e8366293827d65fc97c2244e1c10165bed4c4eb46182e586405c5",
+    "bureau_report.pdf": "58b014a2b2a8bf0f474b90fef920b229fdae4498d893f5b7a2d3349cb2906287",
+    "deviation_register.pdf": "f1fa43a1df0a543c0c6e9652f4e0b783dc5a50c29f31a787e9cb4c02ca75cc52",
+    "kyc_annexure.pdf": "01935b1819dd7cd886b0379d8c50cafad4d19cc166609cb96ef08230d58d0522"
+  },
+  "captured_at": "2026-06-01T09:00:00+05:30"
+}

@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20105",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:29+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Rohan Q Mehta",
+    "branch": "Pune",
+    "sanction_date": "2026-06-23",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2784000.0,
+    "memo_valuation": 2784000.0,
+    "income_stated": 158300.0,
+    "income_verified": 158583.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 724,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.125,
+    "ltv_stated": 0.8440000000000001,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "e094e0a1e7eb6cc6",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "6ab91a54d0eccfdf",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "58bdaf4d2a984a38",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "7590b22c01da9bd1",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "8228a0f549ad3525",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "adbe21b4d1948da3",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

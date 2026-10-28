@@ -1,0 +1,13 @@
+{
+  "loan_id": "HL-20007",
+  "documents": {
+    "sanction_memo.pdf": "919ad718c6a8be5500200381f9607f8d3c62a1981f70bff8455273df4abb52af",
+    "bank_statement.pdf": "93368c8c2105728aa5da7e465709b518e9e5e4bc51040caba810dbd949ea04e0",
+    "appraisal_report.pdf": "e32b730dfd22bde8ca39945f2240c901e9d6599d9adcd29c0794287d86f740c7",
+    "bureau_report.pdf": "f8b4a11935ec57f1717b55ba378af93b85a2154e3f188b2cdf4c8e83a1bcd3a3",
+    "deviation_register.pdf": "695ac1ee5f5d063b533c921cecdff731cf0a24c09bcd5463efdaf15c2d5b3d26",
+    "kyc_annexure.pdf": "bacb48e037aa746e24e7580943487b252c56eaf50c89053d2208d640ac6a7daf",
+    "valuation_revised.pdf": "b1567846036158198a174f7b45421b6df422dc8cce6960a6d4705e1e0c925ff8"
+  },
+  "captured_at": "2026-06-01T09:00:00+05:30"
+}

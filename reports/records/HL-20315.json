@@ -1,0 +1,98 @@
+{
+  "loan_id": "HL-20315",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "9fe810759a412c7f",
+  "findings": [
+    {
+      "id": "c76345430877",
+      "case_id": "HL-20315",
+      "rule_id": "R-02",
+      "clause": "4.1",
+      "clause_page": 2,
+      "family": "bureau_low",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Bureau score 632 is below the policy floor of 700",
+      "detail": "The report on file scores 632. Policy requires 700 or better at sanction.",
+      "derivation": {
+        "score": 632,
+        "floor": 700,
+        "shortfall": 68
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "Commercial bureau score : 632"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Pooja U Bose",
+    "branch": "Surat",
+    "sanction_date": "2026-09-21",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4485000.0,
+    "memo_valuation": 4485000.0,
+    "income_stated": 109000.0,
+    "income_verified": 110166.67,
+    "obligations_verified": 21000.0,
+    "bureau_score": 632,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.475,
+    "ltv_stated": 0.691,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "936b6db16d6dd48d",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "33420f4c90b68b3f",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "8cc52b84e5393668",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "bc0a961362d158d5",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "65ca4a1a9f026513",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "f0e1061e9155042d",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

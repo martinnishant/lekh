@@ -1,0 +1,103 @@
+{
+  "loan_id": "HL-20259",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:32+00:00",
+  "digest": "1afff23e6def6829",
+  "findings": [
+    {
+      "id": "c86a414682ba",
+      "case_id": "HL-20259",
+      "rule_id": "R-15",
+      "clause": "3.2",
+      "clause_page": 1,
+      "family": "unreadable_document",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "No machine-readable text in: bureau_report.pdf",
+      "detail": "The document is on file but produced no text, which means it was scanned or printed to image. It has not been read. OCR is not part of this build, so the file waits for a person rather than passing by default.",
+      "derivation": {
+        "documents": [
+          "bureau_report.pdf"
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "kind": "system_record",
+          "quote": "bureau_report.pdf: 0 characters of extractable text"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Farhan K Nair",
+    "branch": "Kochi",
+    "sanction_date": "2026-08-28",
+    "sanction_amount": 5200000.0,
+    "appraisal_value": 7663000.0,
+    "memo_valuation": 7663000.0,
+    "income_stated": 134100.0,
+    "income_verified": 138600.0,
+    "obligations_verified": 0.0,
+    "bureau_score": null,
+    "dpd_max_12m": null,
+    "foir_stated": 0.355,
+    "ltv_stated": 0.679,
+    "absent_fields": [
+      "bureau_score",
+      "dpd_max_12m",
+      "bureau_report_date"
+    ],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "5d0f971ce3e94d38",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "f047b16e1cf606ba",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "1f4a7d7d0f9cdb67",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "408d96521aae536c",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "148a5f9e880bb537",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "af8f85fd5c7fef96",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "loan_id": "HL-20434",
+  "branch": "Surat",
+  "sanction_amount": 2350000,
+  "purchase_price": 2575000.0,
+  "appraised_value": 2885000.0,
+  "memo_valuation": 2885000.0,
+  "income_memo": 135500.0,
+  "income_statement": 133200.0,
+  "obligations_memo": 51000,
+  "obligations_statement": 51000,
+  "bureau_score": 737,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 18,
+  "rate": 8.5,
+  "tenure_months": 300,
+  "emi_true": 18922.84,
+  "foir_true": 0.5179,
+  "ltv_true": 0.8146,
+  "ltv_cap": 0.9,
+  "deviations": [
+    {
+      "deviation_id": "D-2661",
+      "loan_id": "HL-20434",
+      "clause": "FOIR cap",
+      "approved_by": "L2 - Credit Head",
+      "valid_till": "10 Nov 2026",
+      "status": "Approved"
+    }
+  ],
+  "seeded": [
+    "deviation_boundary"
+  ],
+  "applicant": "Imran V Reddy",
+  "pdd_missing": [],
+  "expected": [],
+  "notes": []
+}

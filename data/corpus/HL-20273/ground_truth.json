@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20273",
+  "branch": "Nagpur",
+  "sanction_amount": 2350000,
+  "purchase_price": 2797000.0,
+  "appraised_value": 2944000.0,
+  "memo_valuation": 2944000.0,
+  "income_memo": 157700.0,
+  "income_statement": 158116.67,
+  "obligations_memo": 4500,
+  "obligations_statement": 4500,
+  "bureau_score": 780,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 7,
+  "rate": 8.5,
+  "tenure_months": 300,
+  "emi_true": 18922.84,
+  "foir_true": 0.1482,
+  "ltv_true": 0.7982,
+  "ltv_cap": 0.9,
+  "deviations": [],
+  "seeded": [
+    "ocr_noise"
+  ],
+  "applicant": "Rahul Q Reddy",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "ocr_noise",
+      "status": "needs_human"
+    }
+  ],
+  "notes": []
+}

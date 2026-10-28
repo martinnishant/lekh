@@ -1,0 +1,83 @@
+{
+  "loan_id": "HL-20371",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:34+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Pooja C Reddy",
+    "branch": "Jaipur",
+    "sanction_date": "2026-10-15",
+    "sanction_amount": 7200000.0,
+    "appraisal_value": 10910000.0,
+    "memo_valuation": 10910000.0,
+    "income_stated": 138400.0,
+    "income_verified": 135333.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 740,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.512,
+    "ltv_stated": 0.66,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2652",
+        "loan_id": "HL-20371",
+        "clause": "FOIR cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-10-14",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2652 HL-20371 FOIR cap L2 - Credit Head 14 Oct 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "b7ac63c73eb79490",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "be2c0c2aba094bb9",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "1658b8506ecfea72",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "9355a37afcf4570e",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "e980085b7882a325",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "74d8d903da9e5299",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

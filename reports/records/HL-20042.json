@@ -1,0 +1,105 @@
+{
+  "loan_id": "HL-20042",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:28+00:00",
+  "digest": "e4cc3d2bdedf5405",
+  "findings": [
+    {
+      "id": "b28496c08ad8",
+      "case_id": "HL-20042",
+      "rule_id": "R-14",
+      "clause": "6.4",
+      "clause_page": 4,
+      "family": "valuation_conflict",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "File carries two valuations: report Rs. 9,053,000 and valuation_revised.pdf Rs. 9,868,000",
+      "detail": "LTV depends on which valuation is adopted. The system does not choose; a named person decides which valuation governs, and the choice is logged.",
+      "derivation": {
+        "report_value": 9053000.0,
+        "other_values": {
+          "valuation_revised.pdf": 9868000.0
+        }
+      },
+      "evidence": [
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Appraised value (technical) : Rs. 90,53,000/-"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Vikram H Verma",
+    "branch": "Jaipur",
+    "sanction_date": "2026-05-27",
+    "sanction_amount": 6400000.0,
+    "appraisal_value": 9053000.0,
+    "memo_valuation": 9053000.0,
+    "income_stated": 104500.0,
+    "income_verified": 104433.33,
+    "obligations_verified": 0.0,
+    "bureau_score": 754,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.499,
+    "ltv_stated": 0.7070000000000001,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "91ae511e9b07f306",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "6a4b9b26aada8752",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "f4caec4fa5f9d9ec",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "8a2c9753db685913",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "fe4dbf86e1214cdb",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "9546cfc08603e116",
+      "tampered": false
+    },
+    {
+      "name": "valuation_revised.pdf",
+      "pages": 1,
+      "sha256": "0749c2236b187f15",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

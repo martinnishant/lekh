@@ -1,0 +1,43 @@
+{
+  "loan_id": "HL-20084",
+  "branch": "Surat",
+  "sanction_amount": 8100000,
+  "purchase_price": 9790000.0,
+  "appraised_value": 10164000.0,
+  "memo_valuation": 10164000.0,
+  "income_memo": 164800.0,
+  "income_statement": 165166.67,
+  "obligations_memo": 0,
+  "obligations_statement": 0,
+  "bureau_score": 721,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 16,
+  "rate": 9.25,
+  "tenure_months": 180,
+  "emi_true": 83364.58,
+  "foir_true": 0.5059,
+  "ltv_true": 0.7969,
+  "ltv_cap": 0.75,
+  "deviations": [
+    {
+      "deviation_id": "D-2411",
+      "loan_id": "HL-20084",
+      "clause": "LTV cap",
+      "approved_by": "L2 - Credit Head",
+      "valid_till": "12 Sep 2026",
+      "status": "Approved"
+    }
+  ],
+  "seeded": [
+    "ltv_explained"
+  ],
+  "applicant": "Rohan M Joshi",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "ltv_breach",
+      "status": "explained"
+    }
+  ],
+  "notes": []
+}

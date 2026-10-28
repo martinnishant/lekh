@@ -1,0 +1,97 @@
+{
+  "loan_id": "HL-20280",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:33+00:00",
+  "digest": "105de17e0f6ea44c",
+  "findings": [
+    {
+      "id": "78ff66e6675e",
+      "case_id": "HL-20280",
+      "rule_id": "R-13",
+      "clause": "3.4",
+      "clause_page": 1,
+      "family": "extraction_gap",
+      "status": "needs_human",
+      "severity": "high",
+      "claim": "1 transaction row(s) could not be parsed with confidence",
+      "detail": "The statement contains rows that look like credits but did not parse. Income and every ratio built on it are withheld until a person reads the statement, because dropping the row would change the answer.",
+      "derivation": {
+        "rows": 1,
+        "sample": "10/03/2026 SALARY CREDIT - NEFT O6,800 2,21,800"
+      },
+      "evidence": [
+        {
+          "doc": "bank_statement.pdf",
+          "page": 1,
+          "quote": "10/03/2026 SALARY CREDIT - NEFT O6,800 2,21,800"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Pooja X Joshi",
+    "branch": "Pune",
+    "sanction_date": "2026-09-06",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4804000.0,
+    "memo_valuation": 4804000.0,
+    "income_stated": 77400.0,
+    "income_verified": 78420.0,
+    "obligations_verified": 14000.0,
+    "bureau_score": 774,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.51,
+    "ltv_stated": 0.645,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "b781326bb3ac4a57",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "d529af6cc8bc9870",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "bc02e7a212b5b6b1",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "342919d063812613",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "75294b562c9661cb",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "8f4f2c813c96188c",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 1
+  }
+}

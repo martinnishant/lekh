@@ -1,0 +1,83 @@
+{
+  "loan_id": "HL-20434",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:36+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Imran V Reddy",
+    "branch": "Surat",
+    "sanction_date": "2026-11-11",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2885000.0,
+    "memo_valuation": 2885000.0,
+    "income_stated": 135500.0,
+    "income_verified": 133200.0,
+    "obligations_verified": 51000.0,
+    "bureau_score": 737,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.516,
+    "ltv_stated": 0.815,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": [
+      {
+        "deviation_id": "D-2661",
+        "loan_id": "HL-20434",
+        "clause": "FOIR cap",
+        "approved_by": "L2 - Credit Head",
+        "valid_till": "2026-11-10",
+        "status": "Approved",
+        "doc": "deviation_register.pdf",
+        "page": 1,
+        "quote": "D-2661 HL-20434 FOIR cap L2 - Credit Head 10 Nov 2026 Approved"
+      }
+    ]
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "dd7d39dc1a5b4699",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "934adcd1f4bd0cb0",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "925b5dd3295c262a",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "fd799af32b83b705",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "273ef0a06366fa55",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "9c65d009b2b57638",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

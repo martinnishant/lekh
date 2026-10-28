@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20140",
+  "branch": "Thane",
+  "sanction_amount": 4800000,
+  "purchase_price": 6790000.0,
+  "appraised_value": 7225000.0,
+  "memo_valuation": 7225000.0,
+  "income_memo": 156700.0,
+  "income_statement": 158900.0,
+  "obligations_memo": 14500,
+  "obligations_statement": 14500,
+  "bureau_score": 768,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 15,
+  "rate": 8.65,
+  "tenure_months": 300,
+  "emi_true": 39137.3,
+  "foir_true": 0.3395,
+  "ltv_true": 0.6644,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "kyc_name_mismatch"
+  ],
+  "applicant": "Divya G Sharma",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "kyc_name_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

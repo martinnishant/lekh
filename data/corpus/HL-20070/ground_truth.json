@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20070",
+  "branch": "Surat",
+  "sanction_amount": 5200000,
+  "purchase_price": 7430000.0,
+  "appraised_value": 8157000.0,
+  "memo_valuation": 8157000.0,
+  "income_memo": 159300.0,
+  "income_statement": 159433.33,
+  "obligations_memo": 9000,
+  "obligations_statement": 9000,
+  "bureau_score": 720,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 18,
+  "rate": 9.0,
+  "tenure_months": 300,
+  "emi_true": 43638.21,
+  "foir_true": 0.3332,
+  "ltv_true": 0.6375,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "arithmetic_mismatch"
+  ],
+  "applicant": "Divya K Chauhan",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "arithmetic_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

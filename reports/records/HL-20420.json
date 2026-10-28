@@ -1,0 +1,71 @@
+{
+  "loan_id": "HL-20420",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:35+00:00",
+  "digest": "4f53cda18c2baa0c",
+  "findings": [],
+  "facts": {
+    "borrower": "Priya Y Shetty",
+    "branch": "Kochi",
+    "sanction_date": "2026-11-05",
+    "sanction_amount": 6200000.0,
+    "appraisal_value": 10415000.0,
+    "memo_valuation": 10415000.0,
+    "income_stated": 125800.0,
+    "income_verified": 124566.67,
+    "obligations_verified": 0.0,
+    "bureau_score": 738,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.493,
+    "ltv_stated": 0.595,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "5812dea1d48fd911",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "f126486824df30ae",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "81ae2f8c483a8178",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "aa2c6e18578112ba",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "3d37aaa79a58b0f5",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "58d037015958fde8",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 0,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

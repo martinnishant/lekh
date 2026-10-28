@@ -1,0 +1,104 @@
+{
+  "loan_id": "HL-20406",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:35+00:00",
+  "digest": "594856f959fef0b8",
+  "findings": [
+    {
+      "id": "065b28da8f4f",
+      "case_id": "HL-20406",
+      "rule_id": "R-04",
+      "clause": "4.3",
+      "clause_page": 2,
+      "family": "stale_bureau",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "Bureau report was 98 days old at sanction (report 24 Jul 2026, sanctioned 30 Oct 2026)",
+      "detail": "Policy requires a report no older than 30 days at sanction.",
+      "derivation": {
+        "report_date": "2026-07-24",
+        "sanction_date": "2026-10-30",
+        "age_days": 98,
+        "limit_days": 30
+      },
+      "evidence": [
+        {
+          "doc": "bureau_report.pdf",
+          "page": 1,
+          "quote": "Report date : 24 Jul 2026"
+        },
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Sanction date : 30 Oct 2026"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Imran U Bose",
+    "branch": "Jaipur",
+    "sanction_date": "2026-10-30",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2976000.0,
+    "memo_valuation": 2976000.0,
+    "income_stated": 158600.0,
+    "income_verified": 158166.67,
+    "obligations_verified": 9000.0,
+    "bureau_score": 781,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.17600000000000002,
+    "ltv_stated": 0.79,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "36b12d82562bd2d9",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "05d524c67b6337cc",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "4b3d338febf37e91",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "6160adae1cc79fe0",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "1220b405881aff9c",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "8a0566f47284df99",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20007",
+  "branch": "Surat",
+  "sanction_amount": 2350000,
+  "purchase_price": 2614000.0,
+  "appraised_value": 2940000.0,
+  "memo_valuation": 2940000.0,
+  "income_memo": 159200.0,
+  "income_statement": 157733.33,
+  "obligations_memo": 21000,
+  "obligations_statement": 21000,
+  "bureau_score": 736,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 23,
+  "rate": 8.75,
+  "tenure_months": 240,
+  "emi_true": 20767.2,
+  "foir_true": 0.2643,
+  "ltv_true": 0.7993,
+  "ltv_cap": 0.9,
+  "deviations": [],
+  "seeded": [
+    "conflicting_valuation"
+  ],
+  "applicant": "Neha C Sharma",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "conflicting_valuation",
+      "status": "needs_human"
+    }
+  ],
+  "notes": []
+}

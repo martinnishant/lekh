@@ -1,0 +1,34 @@
+{
+  "loan_id": "HL-20182",
+  "branch": "Indore",
+  "sanction_amount": 3100000,
+  "purchase_price": 4711000.0,
+  "appraised_value": 4795000.0,
+  "memo_valuation": 4795000.0,
+  "income_memo": 186700.0,
+  "income_statement": 157900.0,
+  "obligations_memo": 4500,
+  "obligations_statement": 4500,
+  "bureau_score": 751,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 18,
+  "rate": 8.65,
+  "tenure_months": 180,
+  "emi_true": 30800.11,
+  "foir_true": 0.2234,
+  "ltv_true": 0.6465,
+  "ltv_cap": 0.8,
+  "deviations": [],
+  "seeded": [
+    "income_mismatch"
+  ],
+  "applicant": "Rahul G Joshi",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "income_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

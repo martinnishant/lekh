@@ -1,0 +1,48 @@
+{
+  "loan_id": "HL-20399",
+  "branch": "Indore",
+  "sanction_amount": 6400000,
+  "purchase_price": 6516000.0,
+  "appraised_value": 8380000.0,
+  "memo_valuation": 8380000.0,
+  "income_memo": 78500.0,
+  "income_statement": 97550.0,
+  "obligations_memo": 9000,
+  "obligations_statement": 9000,
+  "bureau_score": 780,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 24,
+  "rate": 8.5,
+  "tenure_months": 180,
+  "emi_true": 63023.33,
+  "foir_true": 0.7312,
+  "ltv_true": 0.7637,
+  "ltv_cap": 0.8,
+  "deviations": [
+    {
+      "deviation_id": "D-2556",
+      "loan_id": "HL-90056",
+      "clause": "FOIR cap",
+      "approved_by": "L2 - Credit Head",
+      "valid_till": "25 Jan 2027",
+      "status": "Approved"
+    }
+  ],
+  "seeded": [
+    "deviation_invalid",
+    "foir_breach"
+  ],
+  "applicant": "Priya H Kulkarni",
+  "pdd_missing": [],
+  "expected": [
+    {
+      "family": "foir_breach",
+      "status": "finding"
+    },
+    {
+      "family": "income_mismatch",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

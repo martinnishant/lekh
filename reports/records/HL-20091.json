@@ -1,0 +1,98 @@
+{
+  "loan_id": "HL-20091",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:29+00:00",
+  "digest": "d0a84b77638c97fd",
+  "findings": [
+    {
+      "id": "d262596891f6",
+      "case_id": "HL-20091",
+      "rule_id": "R-12",
+      "clause": "7.3",
+      "clause_page": 5,
+      "family": "pdd_missing",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "1 post-disbursement document(s) not on file: Legal opinion - title",
+      "detail": "Disbursement condition not satisfied by the documents in the credit file.",
+      "derivation": {
+        "missing": [
+          "Legal opinion - title"
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Legal opinion - title : MISSING"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Vikram E Kulkarni",
+    "branch": "Kochi",
+    "sanction_date": "2026-06-17",
+    "sanction_amount": 3100000.0,
+    "appraisal_value": 4985000.0,
+    "memo_valuation": 4985000.0,
+    "income_stated": 158700.0,
+    "income_verified": 157450.0,
+    "obligations_verified": 21000.0,
+    "bureau_score": 742,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.293,
+    "ltv_stated": 0.622,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "49ac1f52a5357c54",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "cfd931e6a4486c4b",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "eda753f573c9b9a6",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "13ce743d7be1198f",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "99ef50fd78712788",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "64a148f760c44607",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

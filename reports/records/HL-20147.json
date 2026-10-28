@@ -1,0 +1,107 @@
+{
+  "loan_id": "HL-20147",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:30+00:00",
+  "digest": "43c1363e388f3314",
+  "findings": [
+    {
+      "id": "4a0f486577e0",
+      "case_id": "HL-20147",
+      "rule_id": "R-10",
+      "clause": "7.2",
+      "clause_page": 5,
+      "family": "kyc_name_mismatch",
+      "status": "finding",
+      "severity": "high",
+      "claim": "Name on PAN (Pooja Patel) does not match the name on Aadhaar (Pooja C Kulkarni)",
+      "detail": "Identity documents in the file disagree. A name change is acceptable only with the supporting instrument on record; none is in the file.",
+      "derivation": {
+        "aadhaar": "Pooja C Kulkarni",
+        "pan": "Pooja Patel",
+        "memo": "Pooja C Kulkarni",
+        "differing_tokens": [
+          "kulkarni",
+          "patel"
+        ]
+      },
+      "evidence": [
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "Aadhaar name : Pooja C Kulkarni"
+        },
+        {
+          "doc": "kyc_annexure.pdf",
+          "page": 1,
+          "quote": "PAN name : Pooja Patel"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Pooja C Kulkarni",
+    "branch": "Thane",
+    "sanction_date": "2026-07-11",
+    "sanction_amount": 2350000.0,
+    "appraisal_value": 2866000.0,
+    "memo_valuation": 2866000.0,
+    "income_stated": 157900.0,
+    "income_verified": 155733.33,
+    "obligations_verified": 21000.0,
+    "bureau_score": 781,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.284,
+    "ltv_stated": 0.82,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "943a8985c23f2999",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "bbd1b42daaaae639",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "f7d9d80f0e5a5d4b",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "5d65d9e42047eb2a",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "f34c00c7e708bde5",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "4f40856e8fa4d1a5",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}

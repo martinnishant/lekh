@@ -1,0 +1,37 @@
+{
+  "loan_id": "HL-20049",
+  "branch": "Surat",
+  "sanction_amount": 8100000,
+  "purchase_price": 10152000.0,
+  "appraised_value": 11793000.0,
+  "memo_valuation": 11793000.0,
+  "income_memo": 158000.0,
+  "income_statement": 158683.33,
+  "obligations_memo": 10500,
+  "obligations_statement": 10500,
+  "bureau_score": 749,
+  "dpd_max_12m": 0,
+  "bureau_lag_days": 12,
+  "rate": 8.75,
+  "tenure_months": 240,
+  "emi_true": 71580.57,
+  "foir_true": 0.5195,
+  "ltv_true": 0.6868,
+  "ltv_cap": 0.75,
+  "deviations": [],
+  "seeded": [
+    "pdd_missing"
+  ],
+  "applicant": "Farhan G Gupta",
+  "pdd_missing": [
+    "Occupancy certificate",
+    "Tax receipt - current year"
+  ],
+  "expected": [
+    {
+      "family": "pdd_missing",
+      "status": "finding"
+    }
+  ],
+  "notes": []
+}

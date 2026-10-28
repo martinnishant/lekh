@@ -1,0 +1,106 @@
+{
+  "loan_id": "HL-20231",
+  "run_id": "run-20261028T071428Z",
+  "policy_version": "3.2",
+  "policy_fingerprint": "50cfe28124777015",
+  "started_at": "2026-10-28T07:14:32+00:00",
+  "digest": "2540caf2fb543081",
+  "findings": [
+    {
+      "id": "0976f2ccc979",
+      "case_id": "HL-20231",
+      "rule_id": "R-08",
+      "clause": "6.3",
+      "clause_page": 4,
+      "family": "valuation_mismatch",
+      "status": "finding",
+      "severity": "medium",
+      "claim": "Memo carries Rs. 9,948,000 as value; the valuation report says Rs. 8,956,000 (+11.1%)",
+      "detail": "The LTV stated in the memorandum is computed on a value the valuer did not give. Recomputed on the report, the ratio is different.",
+      "derivation": {
+        "memo_valuation": 9948000.0,
+        "report_valuation": 8956000.0,
+        "gap": 0.1108,
+        "tolerance": 0.02,
+        "ltv_on_memo": 0.6433,
+        "ltv_on_report": 0.7146
+      },
+      "evidence": [
+        {
+          "doc": "sanction_memo.pdf",
+          "page": 1,
+          "quote": "Value as per valuation report : Rs. 99,48,000/-"
+        },
+        {
+          "doc": "appraisal_report.pdf",
+          "page": 1,
+          "quote": "Value as per valuation report : Rs. 89,56,000/-"
+        }
+      ],
+      "deviation_rejected": false,
+      "notes": []
+    }
+  ],
+  "facts": {
+    "borrower": "Imran G Menon",
+    "branch": "Nagpur",
+    "sanction_date": "2026-08-16",
+    "sanction_amount": 6400000.0,
+    "appraisal_value": 8956000.0,
+    "memo_valuation": 9948000.0,
+    "income_stated": 158700.0,
+    "income_verified": 159500.0,
+    "obligations_verified": 14500.0,
+    "bureau_score": 738,
+    "dpd_max_12m": 0,
+    "foir_stated": 0.5,
+    "ltv_stated": 0.643,
+    "absent_fields": [],
+    "missing_docs": [],
+    "tampered_docs": [],
+    "deviations_on_file": []
+  },
+  "documents": [
+    {
+      "name": "appraisal_report.pdf",
+      "pages": 1,
+      "sha256": "52c4530a9eb5e139",
+      "tampered": false
+    },
+    {
+      "name": "bank_statement.pdf",
+      "pages": 3,
+      "sha256": "7ffe0b630ffaf328",
+      "tampered": false
+    },
+    {
+      "name": "bureau_report.pdf",
+      "pages": 1,
+      "sha256": "b1233c593a5074ec",
+      "tampered": false
+    },
+    {
+      "name": "deviation_register.pdf",
+      "pages": 1,
+      "sha256": "b827c9f385413145",
+      "tampered": false
+    },
+    {
+      "name": "kyc_annexure.pdf",
+      "pages": 1,
+      "sha256": "9fc0207cb0f31399",
+      "tampered": false
+    },
+    {
+      "name": "sanction_memo.pdf",
+      "pages": 2,
+      "sha256": "8b172ebee77f1d93",
+      "tampered": false
+    }
+  ],
+  "summary": {
+    "flagged": 1,
+    "explained": 0,
+    "needs_human": 0
+  }
+}
